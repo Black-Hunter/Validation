@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Waits for all JQuery operations to complete.</description>
+  <command name="waitForEval" target="(jQuery.active == 0)" value="true">
+    <comment>Wait until JQuery is finished. This state is not always used. Just an additional measure to make sure we do not run into additional wait problems.</comment>
+  </command>
+</scriptmodule>

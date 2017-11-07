@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://xlt.xceptance.com/xlt-script-data">
+  <NewLastName>Joe</NewLastName>
+  <NewFirstName>Doe</NewFirstName>
+  <NewStreet>wallstreet</NewStreet>
+  <NewStreetNumber>7</NewStreetNumber>
+  <NewZIPCODE>07743</NewZIPCODE>
+  <NewCITY>New York</NewCITY>
+  <Salutation>Herr</Salutation>
+  <AddToAdress>121</AddToAdress>
+</data>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" baseURL="http://dev.hugoboss.com/de">
+  <description>This test case Provides the maximum requierments for a Checkout Prozess,  Validation and Verification are  requierd.</description>
+  <codecomment>VPage is a direction validation insure that this is the right page. General Validation are validations to elements in the page.</codecomment>
+  <codecomment>Starting Home Page and Deleting the Coockies</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AOpenHomePage"/>
+  <command name="waitForVisible" disabled="true" target="css= .newsletterFastSubscribeFormContent"/>
+  <command name="click" disabled="true" target="css= .lightbox__wrapper--centered-content &gt; button:nth-child(2)"/>
+  <codecomment>Validate the site's Menu, other Elements and so on. the page is changable so this module may fail many times. if it fails marke it and press ctrl+shift+c and keep testing.</codecomment>
+  <module name="com.HugoBoss.Modules.Validations.VGeneralValidationHomepage"/>
+  <codecomment>Start searching for the first product. The search Term is declared as "test data". if the product is not available you need to choose a new number and add it to the test data.</codecomment>
+  <module name="com.HugoBoss.Modules.Validations.ASearchValidated">
+    <parameter name="searchTerm" value="${FirstSearchTerm}"/>
+  </module>
+  <codecomment>select  a number for a size the first avilable one. A condition added to avoid fail trying to choose a number is just avilable in one size.</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASelectSize">
+    <condition>document.body.contains(document.getElementsByClassName("js--size-selection-label")[0]) &amp;&amp; document.getElementsByClassName("js--size-selection-label")[0].textContent  ==  "Bitte Größe wählen"</condition>
+  </module>
+  <codecomment>Storing the data of the first product. Data are Name, size, color.</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.SFirstProduct"/>
+  <codecomment>After selecting the product it must be added to the cart to continue buying</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.AAddToCart"/>
+  <codecomment>After Searching for product the page changes. and the elements in the page must be validated.
+Validate the site's Menu, other Elements and so on. the page is changable so this module may fail many times. if it fails marke it and press ctrl+shift+c and keep testing.</codecomment>
+  <module name="com.HugoBoss.Modules.Validations.VGeneralValidationSearch"/>
+  <codecomment>Start searching for the second product. The search Term is declared as "test data". if the product is not available you need to choose a new number and add it to the test data.</codecomment>
+  <module name="com.HugoBoss.Modules.Validations.ASearchValidated">
+    <parameter name="searchTerm" value="${SecondSearchTerm}"/>
+  </module>
+  <codecomment>select  a number for a size the second avilable one. A condition added to avoid fail trying to choose a number is just avilable in one size.</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASelectSize">
+    <condition>document.body.contains(document.getElementsByClassName("js--size-selection-label")[0]) &amp;&amp; document.getElementsByClassName("js--size-selection-label")[0].textContent  ==  "Bitte Größe wählen"</condition>
+  </module>
+  <codecomment>Storing the data of the second product. Data are Name, size, color.</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.SSecondProduct"/>
+  <codecomment>Validate the site's Menu, other Elements and so on. the page is changable so this module may fail many times. if it fails marke it and press ctrl+shift+c and keep testing.</codecomment>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_scrollElementIntoView">
+    <parameter name="cssLocator" value="#add-to-cart "/>
+  </module>
+  <codecomment>Buying the product after selecting.</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.AAddToCart"/>
+  <codecomment>After Searching for product the page changes. and the elements in the page must be validated.
+Validate the site's Menu, other Elements and so on. the page is changable so this module may fail many times. if it fails marke it and press ctrl+shift+c and keep testing.</codecomment>
+  <module name="com.HugoBoss.Modules.Validations.VGeneralValidationSearch"/>
+  <codecomment>First validation for the bought items in the mini basket, and opining it.</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.AOpenMiniBasket"/>
+  <module name="com.HugoBoss.Modules.Validations.VMiniBascketValdated"/>
+  <codecomment>Second validation for the bought items in the basket, and opining it.</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.AOpenBascket"/>
+  <module name="com.HugoBoss.Modules.Navigation.VPage">
+    <parameter name="pageCharacteristics" value="document.getElementsByClassName(&quot;page-title--text-title&quot;)[0].innerHTML "/>
+    <parameter name="value" value="Warenkorb"/>
+  </module>
+  <module name="com.HugoBoss.Modules.Basket.VValidateItemsInBasket"/>
+  <module name="com.HugoBoss.Modules.Validations.VGeneralValidationCart"/>
+  <codecomment>Direction to the Regestration Page after validating the Basket. and validate all the element in it.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToRegestration"/>
+  <module name="com.HugoBoss.Modules.Navigation.VPage">
+    <parameter name="pageCharacteristics" value="document.getElementsByClassName(&quot;page-content__header page-content__header--border page-content__header--text-title page-content__header--text-title--login&quot;)[0].innerHTML"/>
+    <parameter name="value" value="Anmelden"/>
+  </module>
+  <module name="com.HugoBoss.Modules.Validations.VGeneralValidationRegestration"/>
+  <codecomment>Save Data of Product</codecomment>
+  <codecomment>VPage is a direction validation. Insure the correct page by identifying the it using the some identical element in the page.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToPersonaldata"/>
+  <module name="com.HugoBoss.Modules.Navigation.VPage">
+    <parameter name="pageCharacteristics" value="document.getElementsByClassName(&quot;font__h2&quot;)[0].innerHTML"/>
+    <parameter name="value" value="Rechnungsanschrift eingeben"/>
+  </module>
+  <module name="com.HugoBoss.Modules.Validations.VValidateAddresForm"/>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.VAddressform"/>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.AFillPersonalData">
+    <parameter name="salutation" value="${Salutation}"/>
+    <parameter name="firstName" value="${FirstName}"/>
+    <parameter name="lastName" value="${LastName}"/>
+    <parameter name="street" value="${Street}"/>
+    <parameter name="streetNumber" value="${StreetNumber}"/>
+    <parameter name="ZipCode" value="${ZIPCODE}"/>
+    <parameter name="City" value="${CITY}"/>
+    <parameter name="AddToAdress" value="${AddToAdress}"/>
+    <parameter name="Email" value="${Email}"/>
+  </module>
+  <codecomment>Diricting to Billingform. Adding Billing Data and Validating the Input Fields and other elements in the site.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToPaymentOption"/>
+  <module name="com.HugoBoss.Modules.Navigation.VPage">
+    <parameter name="pageCharacteristics" value="document.getElementsByClassName(&quot;form__legend&quot;)[0].innerHTML"/>
+    <parameter name="value" value="Wählen Sie eine Zahlungsart"/>
+  </module>
+  <module name="com.HugoBoss.Modules.Validations.VValidatePaymentForm"/>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.APayCreditCardValidated">
+    <parameter name="account" value="${VISACODE}"/>
+    <parameter name="expDate" value="${Month}"/>
+    <parameter name="securityCode" value="${secCode}"/>
+    <parameter name="expYear" value="${YEAR}"/>
+  </module>
+  <codecomment>directing to the Summery. Validation for Shipping Adress, orderd items and page elements.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToOrderSummary"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.VValidateOrderSummery"/>
+  <module name="com.HugoBoss.Modules.Navigation.VPage">
+    <parameter name="pageCharacteristics" value="document.getElementsByClassName(&quot;page-content__header&quot;)[0].innerHTML"/>
+    <parameter name="value" value="Bestellung abschließen"/>
+  </module>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.VValidateShippingAdress"/>
+  <module name="com.HugoBoss.Modules.Basket.VValidateBoughtIhtems"/>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.VGesamtBestellung" disabled="true"/>
+  <codecomment>Direct to the confirmation page and validate the confirmation massage.</codecomment>
+  <module name="com.HugoBoss.Modules.Validations.VConfirmation"/>
+</testcase>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Filling Personal data for the Checkout Prozess.
+It Containes Parameters for the Values of Personal data, which is filled by reserved Variables in the Dataset. </description>
+  <parameter name="salutation"/>
+  <parameter name="firstName"/>
+  <parameter name="lastName"/>
+  <parameter name="street"/>
+  <parameter name="streetNumber"/>
+  <parameter name="ZipCode"/>
+  <parameter name="City"/>
+  <parameter name="AddToAdress"/>
+  <parameter name="Email"/>
+  <codecomment>Filling Personal Data and Validating the Input Fields</codecomment>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="waitForVisible" target="css= .font__h2"/>
+  <command name="select" target="css=#dwfrm_singleshipping_billingAddress_addressFields_salutation" value="@{salutation}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_firstName" value="@{firstName}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_lastName" value="@{lastName}"/>
+  <command name="type" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address1" value="@{street}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_streetNo" value="@{streetNumber}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_address2" value="@{AddToAdress}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_zip" value="@{ZipCode}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_city" value="@{City}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_email_emailAddress" value="@{Email}"/>
+  <command name="check" target="css= #dwfrm_singleshipping_shippingAddress_checkoutConfirmProfileTracking"/>
+  <command name="assertChecked" target="css= #shipping-method-standard"/>
+  <command name="waitForVisible" target="css=#checkout-form"/>
+</scriptmodule>

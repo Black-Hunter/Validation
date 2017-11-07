@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Opening a new Fresh Homepage whithout Cookies.
+</description>
+  <command name="open" value="${BaseURL}"/>
+  <command name="deleteAllVisibleCookies"/>
+  <command name="open" value="${BaseURL}">
+    <comment>Frish start without cookies</comment>
+  </command>
+  <command name="waitForVisible" target="css= #wrapper &gt; div.sidebar &gt; div.lightbox__wrapper--centered &gt; div.lightbox__wrapper--centered-content &gt; button &gt; svg &gt; use"/>
+  <command name="click" target="css= #wrapper &gt; div.sidebar &gt; div.lightbox__wrapper--centered &gt; div.lightbox__wrapper--centered-content &gt; button &gt; svg &gt; use"/>
+</scriptmodule>

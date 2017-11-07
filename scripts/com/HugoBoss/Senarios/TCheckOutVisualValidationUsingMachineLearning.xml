@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" baseURL="http://dev.hugoboss.com/de">
+  <description>This test case Provides the GUI requierments for a Checkout Prozess,  Validation using Machien Learning.
+I didnt use this scenario. AI module doesnt work.</description>
+  <codecomment>Opening the Homepage and Cleaing the Cookies</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AOpenHomePage"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.AI"/>
+  <codecomment>Search for a spicific Product</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASearch">
+    <condition disabled="true">NoCondition</condition>
+    <parameter name="searchTerm" value="${FirstSearchTerm}"/>
+  </module>
+  <module name="com.HugoBoss.Modules.SimpleActions.AI"/>
+  <codecomment>Buy the Product you searched for</codecomment>
+  <command name="echo" value="document.getElementsByClassName(&quot;js--size-selection-label&quot;)[0].textContent  ==  &quot;Bitte Größe wählen&quot;"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASelectSize">
+    <condition>document.body.contains(document.getElementsByClassName("js--size-selection-label")[0]) &amp;&amp; document.getElementsByClassName("js--size-selection-label")[0].textContent  ==  "Bitte Größe wählen"</condition>
+  </module>
+  <module name="com.HugoBoss.Modules.Basket.AAddToCart"/>
+  <codecomment>Search for a spicific Product</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASearch">
+    <parameter name="searchTerm" value="${SecondSearchTerm}"/>
+  </module>
+  <module name="com.HugoBoss.Modules.SimpleActions.AI"/>
+  <codecomment>Buy the Product you searched for</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASelectSize">
+    <condition>document.body.contains(document.getElementsByClassName("js--size-selection-label")[0]) &amp;&amp; document.getElementsByClassName("js--size-selection-label")[0].textContent  ==  "Bitte Größe wählen"</condition>
+  </module>
+  <module name="com.HugoBoss.Modules.Basket.AAddToCart"/>
+  <module name="com.HugoBoss.Modules.Basket.AOpenBascket"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.AI"/>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToRegestration"/>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToPersonaldata"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.AI"/>
+  <codecomment>Normal Filling Poersonal Data</codecomment>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.AFillPersonalData">
+    <parameter name="salutation" value="${Salutation}"/>
+    <parameter name="firstName" value="${FirstName}"/>
+    <parameter name="lastName" value="${LastName}"/>
+    <parameter name="street" value="${Street}"/>
+    <parameter name="streetNumber" value="${StreetNumber}"/>
+    <parameter name="ZipCode" value="${ZIPCODE}"/>
+    <parameter name="City" value="${CITY}"/>
+    <parameter name="AddToAdress" value="${AddToAdress}"/>
+    <parameter name="Email" value="${Email}"/>
+  </module>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToPaymentOption"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.AI"/>
+  <codecomment>Normal Filling Billing Data</codecomment>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.APayCreditCard">
+    <parameter name="account" value="${VISACODE}"/>
+    <parameter name="expDate" value="${Month}"/>
+    <parameter name="expYear" value="${YEAR}"/>
+    <parameter name="securityCode" value="${secCode}"/>
+  </module>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToOrderSummary"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.AI"/>
+  <codecomment>Send an Confirmation Email and Confirm the Billing and Shipping</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AConfirm"/>
+</testcase>

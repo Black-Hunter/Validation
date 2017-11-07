@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Filling Personal data for the Checkout Prozess.
+It Containes Parameters for the Values of Personal data, which is filled by reserved Variables in the Dataset. 
+The new Features here are Validations and verifications of the Typed or selected  fields.</description>
+  <parameter name="Salutation"/>
+  <parameter name="FirstName"/>
+  <parameter name="LastName"/>
+  <parameter name="Street"/>
+  <parameter name="StreetNumber"/>
+  <parameter name="AddToAdress"/>
+  <parameter name="ZipCode"/>
+  <parameter name="City"/>
+  <parameter name="Email"/>
+  <parameter name="BairthDay"/>
+  <parameter name="BairthMonth"/>
+  <parameter name="BairthYear"/>
+  <command name="waitForVisible" disabled="true" target="css= .font__h2"/>
+  <command name="waitForVisible" disabled="true" target="css=#selectdwfrm_singleshipping_billingAddress_addressFields_salutation"/>
+  <command name="assertVisible" target="css=#selectdwfrm_singleshipping_billingAddress_addressFields_salutation"/>
+  <command name="select" target="css=#dwfrm_singleshipping_billingAddress_addressFields_salutation" value="@{Salutation}"/>
+  <command name="waitForVisible" disabled="true" target="css= #selectdwfrm_singleshipping_billingAddress_addressFields_title"/>
+  <command name="assertVisible" target="css= #dwfrm_singleshipping_billingAddress_addressFields_firstName"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_firstName" value="@{FirstName}"/>
+  <command name="waitForVisible" disabled="true" target="css= #dwfrm_singleshipping_billingAddress_addressFields_lastName"/>
+  <command name="assertVisible" target="css= #dwfrm_singleshipping_billingAddress_addressFields_lastName"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_lastName" value="@{LastName}"/>
+  <command name="waitForVisible" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address1"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address1"/>
+  <command name="type" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address1" value="@{Street}"/>
+  <command name="waitForVisible" disabled="true" target="css= #dwfrm_singleshipping_billingAddress_addressFields_streetNo"/>
+  <command name="assertVisible" target="css= #dwfrm_singleshipping_billingAddress_addressFields_streetNo"/>
+  <command name="type" target="css= #dwfrm_singleshipping_billingAddress_addressFields_streetNo" value="@{StreetNumber}"/>
+  <command name="waitForVisible" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address2"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address2"/>
+  <command name="type" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address2" value="@{AddToAdress}"/>
+  <command name="waitForVisible" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_addressFields_zip"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_zip"/>
+  <command name="type" target="css=#dwfrm_singleshipping_billingAddress_addressFields_zip" value="@{ZipCode}"/>
+  <command name="waitForVisible" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_addressFields_city"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_city"/>
+  <command name="type" target="css=#dwfrm_singleshipping_billingAddress_addressFields_city" value="@{City}"/>
+  <command name="waitForVisible" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_email_emailAddress"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_email_emailAddress"/>
+  <command name="type" target="css=#dwfrm_singleshipping_billingAddress_email_emailAddress" value="@{Email}"/>
+  <command name="waitForVisible" disabled="true" target="css= div.form__item--w33:nth-child(2) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="assertVisible" disabled="true" target="css=div.form__item--w33:nth-child(2) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="select" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_birthdayfields_day" value="@{BairthDay}"/>
+  <command name="waitForVisible" disabled="true" target="css=div.form__item--w33:nth-child(3) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="assertVisible" disabled="true" target="css=div.form__item--w33:nth-child(3) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="select" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_birthdayfields_month" value="@{BairthMonth}"/>
+  <command name="waitForVisible" disabled="true" target="css=div.form__item--w33:nth-child(4) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="assertVisible" disabled="true" target="css=div.form__item--w33:nth-child(4) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="select" disabled="true" target="css=#dwfrm_singleshipping_billingAddress_birthdayfields_year" value="@{BairthYear}"/>
+  <command name="waitForVisible" disabled="true" target="css=.form__item--label-inline &gt; span:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css=.form__item--label-inline &gt; span:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="check" target="css=#dwfrm_singleshipping_shippingAddress_checkoutConfirmProfileTracking"/>
+  <command name="assertChecked" disabled="true" target="id=dwfrm_singleshipping_shippingAddress_checkoutConfirmProfileTracking"/>
+  <command name="clickAndWait" target="css= button.button:nth-child(3) &gt; svg:nth-child(1)"/>
+</scriptmodule>

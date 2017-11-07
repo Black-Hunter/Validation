@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Xceptance LoadTest Report - Errors</title>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/superfish.custom.css">
+<script type="text/javascript" src="js/jquery-3.1.0.min.js">/* Placeholder */</script><script type="text/javascript" src="js/jquery.hoverIntent-1.8.0.min.js">/* Placeholder */</script><script type="text/javascript" src="js/jquery.scrollTo-2.1.3.min.js">/* Placeholder */</script><script type="text/javascript" src="js/jquery.superfish-1.7.4.js">/* Placeholder */</script><script type="text/javascript" src="js/tabs.js">/* Placeholder */</script><script src="js/table.js" type="text/javascript">/* Placeholder */</script>
+</head>
+<body id="loadtestreport">
+<div id="container">
+<div id="content">
+	
+
+		<div id="navigation">
+			<ul id="superfish" class="sf-menu">
+				<li><a href="index.html">Overview</a>
+					<ul>
+						<li><a href="index.html#load-profile">Load Profile</a></li>
+						<li><a href="index.html#comment">Test Comment</a></li>
+						<li><a href="index.html#general">General Information</a></li>
+                        <li><a href="index.html#summary">Performance Summary</a></li>
+						<li><a href="index.html#network">Network</a></li>
+					</ul>
+				</li>
+				<li><a href="transactions.html">Transactions</a></li>
+				<li><a href="actions.html">Actions</a></li>
+				<li><a href="requests.html">Requests</a></li>
+                <li><a href="network.html">Network</a>
+                    <ul>
+                        <li><a href="network.html#network">Network</a></li>
+                        <li><a href="network.html#hosts">Hosts</a></li>
+                        <li><a href="network.html#http-response-codes">HTTP Response Codes</a></li>
+                        <li><a href="network.html#content-types">Content Types</a></li>
+                    </ul>
+                </li>
+				<li><a href="custom-timers.html">Custom Timers</a></li>
+                <li><a href="custom-values.html">Custom Values</a></li>
+				<li><a href="external.html">External Data</a></li>
+				<li><a href="errors.html">Errors</a>
+					<ul>
+						<li><a href="errors.html#request-errors">Request Errors</a></li>
+                        <li><a href="errors.html#transaction-error-overview">Transaction Error Overview</a></li>
+						<li><a href="errors.html#transaction-error-details">Transaction Error Details</a></li>
+					</ul>
+				</li>
+                <li><a href="events.html">Events</a>
+                    <ul>
+                        <li><a href="events.html#event-overview">Overview</a></li>
+                        <li><a href="events.html#event-details">Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="agents.html">Agents</a></li>
+				<li><a href="configuration.html">Configuration</a>
+					<ul>
+						<li><a href="configuration.html#load-profile">Load Profile</a></li>	
+						<li><a href="configuration.html#configuration">Settings</a></li>
+					</ul>
+				</li>	
+			</ul>
+		</div>
+		
+	<div id="header">
+<img alt="The company logo" class="logo" src="images/logo.png"><h1>Load and Performance Test Report</h1>
+<h2>
+				Created with
+				<a href="http://www.xceptance-loadtest.com/?piwik_campaign=TestReport"><span class="productname">Xceptance LoadTest</span><span class="productversion">4.9.2</span></a>
+</h2>
+</div>
+<div id="data-content">
+<div id="error-summary" class="section">
+<h2>Errors</h2>
+<div class="content">
+<div class="description">
+<p>
+                This section lists all errors that occurred during the load test. The data listed here helps you identify
+                application errors or test problems.
+                <span class="link more-show" onclick="$('#more-errorsN10001').show();$('#more-errorsN10001-hide').show(); $(this).hide();" id="more-errorsN10001-show">More...</span><span class="link more-hide" onclick="$('#more-errorsN10001').hide();$('#more-errorsN10001-show').show(); $(this).hide();" id="more-errorsN10001-hide">Hide...</span>
+</p>
+<div class="more" id="more-errorsN10001">
+<p>
+                    Errors are hard failures in the flow of testing. They stop the current execution of the test case (or
+                    transaction), log an error, and eventually move on to the next test execution if scheduled to do so.
+                </p>
+<p>
+                    Errors can occur on transaction, action, or request level. Errors on the request level are counted on action
+                    level as well. Action level errors are also counted as transaction errors. A connection reset, for instance,
+                    counts as request error and causes the action to fail (counted). As a result, the transaction fails as well
+                    which again is counted and logged.
+                </p>
+<p>
+                    The Overview section below lists the error message and the count. It ignores the stack trace to sum up common
+                    problems without relating them to the test case. The Details section beneath lists the full stack trace next
+                    to the test case and the directory in which you can find the data dump for further analysis.
+                </p>
+</div>
+</div>
+<div class="data">
+<div class="charts">
+<div class="chart">
+<img alt="Errors" src="charts/Errors.png"></div>
+</div>
+<h3 id="request-errors">Request Errors</h3>
+<div class="description">
+<p>
+							This section displays the request errors grouped by response
+							code.
+							<span class="link more-show" onclick="$('#more-requestErrorChartsN10001').show();$('#more-requestErrorChartsN10001-hide').show(); $(this).hide();" id="more-requestErrorChartsN10001-show">More...</span><span class="link more-hide" onclick="$('#more-requestErrorChartsN10001').hide();$('#more-requestErrorChartsN10001-show').show(); $(this).hide();" id="more-requestErrorChartsN10001-hide">Hide...</span>
+</p>
+<div class="more" id="more-requestErrorChartsN10001">
+<p>
+								The chart creation can be configured by setting the
+								corresponding report generator properties. (See
+								<b>reportgenerator.properties</b>
+								file for more details)
+							</p>
+</div>
+</div>
+<p class="text-center">
+								There are no charts to show.
+							</p>
+<h3 id="transaction-error-overview">Transaction Error Overview</h3>
+<table class="table-autosort:1 table-autosort-order:desc table-autostripe table-stripeclass:odd">
+<thead>
+<tr>
+<th class="table-sortable:alphanumeric">Error Message</th><th class="table-sortable:numeric">Count</th><th class="table-sortable:numeric">Percentage</th>
+</tr>
+</thead>
+<tfoot>
+<tr class="totals">
+<td class="key">Totals (1 entry)</td><td class="value number">10</td><td class="value number">100.0%</td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="value text forcewordbreak"><a id="tableEntry--344526893" href="#-344526893">Command failed: clickAndWait target="css= [value="Zahlungspflichtig bestellen"]" value="" -&gt; No element found for locator: css= [value="Zahlungspflichtig bestellen"]</a></td><td class="value number count">10</td><td class="value number count">100.0%</td>
+</tr>
+</tbody>
+</table>
+<div class="description">
+<p>
+<span class="link more-show" onclick="$('#more-transactionOverviewN10001').show();$('#more-transactionOverviewN10001-hide').show(); $(this).hide();" id="more-transactionOverviewN10001-show">More...</span><span class="link more-hide" onclick="$('#more-transactionOverviewN10001').hide();$('#more-transactionOverviewN10001-show').show(); $(this).hide();" id="more-transactionOverviewN10001-hide">Hide...</span>
+</p>
+<div class="more" id="more-transactionOverviewN10001">
+<p>
+								The chart limit can be set or disabled by setting the
+								corresponding report generator properties. (See
+								<b>reportgenerator.properties</b>
+								file for more details)
+							</p>
+</div>
+</div>
+<div class="charts">
+<div class="chart">
+<div class="error">
+<img id="-344526893" src="charts/errors/t-344526893.png" alt="Errors by Type"><a class="backLink" href="#tableEntry--344526893">
+												Back to table
+											</a>
+</div>
+</div>
+</div>
+<h3 id="transaction-error-details">Transaction Error Details</h3>
+<div class="description">
+<p>
+<span class="link more-show" onclick="$('#more-transactionDetailsN10001').show();$('#more-transactionDetailsN10001-hide').show(); $(this).hide();" id="more-transactionDetailsN10001-show">More...</span><span class="link more-hide" onclick="$('#more-transactionDetailsN10001').hide();$('#more-transactionDetailsN10001-show').show(); $(this).hide();" id="more-transactionDetailsN10001-hide">Hide...</span>
+</p>
+<div class="more" id="more-transactionDetailsN10001">
+<p>
+								The chart limit can be set or disabled by setting the
+								corresponding report generator properties. (See
+								<b>reportgenerator.properties</b>
+								file for more details)
+							</p>
+</div>
+</div>
+<table class="table-autosort:0 table-autosort-order:desc table-autostripe table-stripeclass:odd">
+<thead>
+<tr>
+<th class="table-sortable:numeric">Count</th><th class="table-sortable:alphanumeric">Test Case</th><th class="table-sortable:alphanumeric">Action</th><th>Directory</th><th class="table-sortable:alphanumeric">Error Information</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tfoot>
+<tr>
+<td class="value number count">10</td><td class="value text testcasename">TCheckOut</td><td class="value text">OpenStartPage</td><td class="value text directory">ac001_00/TCheckOut/0/output/1503072581503<br>ac001_00/TCheckOut/0/output/1503072692473<br>ac001_00/TCheckOut/1/output/1503072569258<br>ac001_00/TCheckOut/1/output/1503072673806<br>ac001_00/TCheckOut/2/output/1503072589488<br>ac001_00/TCheckOut/2/output/1503072696103<br>ac001_00/TCheckOut/3/output/1503072567898<br>ac001_00/TCheckOut/3/output/1503072681208<br>ac001_00/TCheckOut/4/output/1503072580349<br>ac001_00/TCheckOut/4/output/1503072691833<br>
+</td><td class="value text trace collapsible forcewordbreak">
+<div class="collapse">Command failed: clickAndWait target="css= [value="Zahlungspflichtig bestellen"]" value="" -&gt; No element found for locator: css= [value="Zahlungspflichtig bestellen"]</div>
+<pre>com.xceptance.xlt.engine.scripting.ScriptException: Command failed: clickAndWait target="css= [value="Zahlungspflichtig bestellen"]" value="" -&gt; No element found for locator: css= [value="Zahlungspflichtig bestellen"]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Zoulkowski-E520', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-38-generic', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+	at com.HugoBoss.Modules.Navigation.AConfirm.clickAndWait(AConfirm.xml:5)
+	at com.HugoBoss.Senarios.TCheckOut.AConfirm(TCheckOut.xml:125)
+</pre>
+<div class="charts">
+<div class="chart">
+<img src="charts/errors/d1422222071.png" alt="Details Chart"></div>
+</div>
+<a href="#-344526893" class="backlink">
+															Error overview chart
+														</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+        Copyright (c) 2005-2017 <a title="Visit the Xceptance website" href="http://www.xceptance.com/">Xceptance Software Technologies</a>
+</div>
+</div>
+</div>
+<script src="js/xlt.js" type="text/javascript"></script>
+</body>
+</html>

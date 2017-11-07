@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Buying Items been searched for in a previous Module namely Search-Module</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="waitForVisible" target="css= #add-to-cart "/>
+  <command name="waitForNotElementPresent" target="css= [class=&quot;button button--primary button--full addToCartOverlay button__addToCart--disabled add-to-cart icon-all-brands-basket-icon widget-initialized&quot;]"/>
+  <command name="click" target="css= #add-to-cart "/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="waitForVisible" target="css= div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2)">
+    <comment>//*[contains(@class , "js-overlays__button-close sidebar__button-close ")]
+css=  div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2) </comment>
+  </command>
+  <command name="click" target="css=  div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2) &gt; svg:nth-child(1)">
+    <comment>
+div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2)</comment>
+  </command>
+  <command name="waitForNotElementPresent" target="css= .overlay-content-wrapper--fixed"/>
+</scriptmodule>

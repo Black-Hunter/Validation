@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module directs to personaldata opitions</description>
+  <command name="clickAndWait" target="//*[contains(@class,&quot;button button--primary button--right button--ia-cta--primary button--loginbox&quot;)]">
+    <comment>css=.button--loginbox</comment>
+  </command>
+</scriptmodule>

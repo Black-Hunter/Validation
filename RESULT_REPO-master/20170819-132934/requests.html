@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Xceptance LoadTest Report - Requests</title>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/superfish.custom.css">
+<script type="text/javascript" src="js/jquery-3.1.0.min.js">/* Placeholder */</script><script type="text/javascript" src="js/jquery.hoverIntent-1.8.0.min.js">/* Placeholder */</script><script type="text/javascript" src="js/jquery.scrollTo-2.1.3.min.js">/* Placeholder */</script><script type="text/javascript" src="js/jquery.superfish-1.7.4.js">/* Placeholder */</script><script type="text/javascript" src="js/tabs.js">/* Placeholder */</script><script src="js/table.js" type="text/javascript">/* Placeholder */</script>
+</head>
+<body id="loadtestreport">
+<div id="container">
+<div id="content">
+	
+
+		<div id="navigation">
+			<ul id="superfish" class="sf-menu">
+				<li><a href="index.html">Overview</a>
+					<ul>
+						<li><a href="index.html#load-profile">Load Profile</a></li>
+						<li><a href="index.html#comment">Test Comment</a></li>
+						<li><a href="index.html#general">General Information</a></li>
+                        <li><a href="index.html#summary">Performance Summary</a></li>
+						<li><a href="index.html#network">Network</a></li>
+					</ul>
+				</li>
+				<li><a href="transactions.html">Transactions</a></li>
+				<li><a href="actions.html">Actions</a></li>
+				<li><a href="requests.html">Requests</a></li>
+                <li><a href="network.html">Network</a>
+                    <ul>
+                        <li><a href="network.html#network">Network</a></li>
+                        <li><a href="network.html#hosts">Hosts</a></li>
+                        <li><a href="network.html#http-response-codes">HTTP Response Codes</a></li>
+                        <li><a href="network.html#content-types">Content Types</a></li>
+                    </ul>
+                </li>
+				<li><a href="custom-timers.html">Custom Timers</a></li>
+                <li><a href="custom-values.html">Custom Values</a></li>
+				<li><a href="external.html">External Data</a></li>
+				<li><a href="errors.html">Errors</a>
+					<ul>
+						<li><a href="errors.html#request-errors">Request Errors</a></li>
+                        <li><a href="errors.html#transaction-error-overview">Transaction Error Overview</a></li>
+						<li><a href="errors.html#transaction-error-details">Transaction Error Details</a></li>
+					</ul>
+				</li>
+                <li><a href="events.html">Events</a>
+                    <ul>
+                        <li><a href="events.html#event-overview">Overview</a></li>
+                        <li><a href="events.html#event-details">Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="agents.html">Agents</a></li>
+				<li><a href="configuration.html">Configuration</a>
+					<ul>
+						<li><a href="configuration.html#load-profile">Load Profile</a></li>	
+						<li><a href="configuration.html#configuration">Settings</a></li>
+					</ul>
+				</li>	
+			</ul>
+		</div>
+		
+	<div id="header">
+<img alt="The company logo" class="logo" src="images/logo.png"><h1>Load and Performance Test Report</h1>
+<h2>
+				Created with
+				<a href="http://www.xceptance-loadtest.com/?piwik_campaign=TestReport"><span class="productname">Xceptance LoadTest</span><span class="productversion">4.9.2</span></a>
+</h2>
+</div>
+<div id="data-content">
+<div id="request-summary" class="section">
+<h2>Requests</h2>
+<div class="content">
+<div class="description">
+<p>
+                The Request section is the most important statistics section when testing web applications. It directly reflects
+                the loading time of pages or page components.
+                <span class="link more-show" onclick="$('#more-requestN10001').show();$('#more-requestN10001-hide').show(); $(this).hide();" id="more-requestN10001-show">More...</span><span class="link more-hide" onclick="$('#more-requestN10001').hide();$('#more-requestN10001-show').show(); $(this).hide();" id="more-requestN10001-hide">Hide...</span>
+</p>
+<div class="more" id="more-requestN10001">
+<h3>Overview</h3>
+<p>
+                    Each row in the Overview tab displays the data for one specific request. Its name is derived from the action
+                    name and may have been modified using request filter and transformation rules.
+                </p>
+<p>
+                    The Count column of the table shows the total number of executions (Total), the calculated executions per
+                    second (1/s) and per minute (1/min) as well as projections or calculations of the executions per hour (1/h)
+                    and per day (1/d).
+                </p>
+<p>
+                    The Errors column shows the total number of errors that occurred during the loading of a request (Total). The
+                    error count does not include errors detected during the post validation of the received data. Typical error
+                    situations are HTTP response codes indicating server-side errors (5xx), timeouts, or connection resets.
+                </p>
+<p>
+                    The Runtime column shows the median and the arithmetic mean, the minimum and maximum runtime encountered, and
+                    the standard deviation of all data within that series. The Runtime Segmentation shows several runtime
+                    segments and the number of requests within the segment&rsquo;s definition.
+                </p>
+<p>
+                    If the runtime of the test case is shorter than a displayed time period, for instance, if the test runtime
+                    was 30 minutes and the time period is given in hours, then the numbers are a linear projection. That means
+                    they show a possible outcome of a longer test run, assuming load and application behavior remain the same.
+                </p>
+<p>
+                    The Runtime Segmentation column helps you evaluate SLA and test success definitions. You can change the setup
+                    in the report generator properties.
+                </p>
+<h3>Bandwidth</h3>
+<p>
+                    The Bandwidth tab shows the incoming and outgoing bandwidth per request. XLT measures on socket level. Thus,
+                    actual incoming and outgoing data is recorded. XLT does not analyze or modify that data when taking the
+                    measurements.
+                </p>
+<p>
+                    The Bytes Sent column comprises all data sent out of the application including overhead such as HTTP(S)
+                    headers and SSL protocol data. The Bytes Received column includes all received data and the connected
+                    overhead. As the data is measured right above the socket level and before it gets decoded by the
+                    application, any compressed traffic is measured as seen by the network layer. The data size you see is not
+                    the expanded data as seen by the DOM parser.
+                </p>
+<h3>Network Timing</h3>
+<p>
+                    The Network Timing tab displays all low-level network timing data that has been measured on socket level.
+                    Each measurement point includes the minimum and maximum times and the mean of all gathered data. The
+                    following measurement points are shown:
+                </p>
+<ul>
+<li>
+                        Connect Time: Time needed to establish a connection to the other system. Note that when you use
+                        keep-alive semantics during testing, the connect time will mainly be 0 except for the first request of a
+                        transaction.
+                    </li>
+<li>
+                        Send Time: Time needed to send the request to the other system. Depending on the payload and the network
+                        speed, this data often amounts to zero or very small values.
+                    </li>
+<li>
+                        Server Busy Time: Time spent waiting from sending the last bytes to receiving the first bytes.
+                    </li>
+<li>
+                        Receive Time: Time spent receiving data from the first to the last bytes received.
+                    </li>
+<li>
+                        Time to First Bytes: Total time from the connection start until the first bytes are received. Includes
+                        Connect, Send, Server Busy, and Receive Time.
+                    </li>
+<li>
+                        Time to Last Bytes: Total time from the connection start until the last bytes are received. This is the
+                        time needed to connect, send, and receive data. Often it is called network runtime. In contrast, the
+                        request runtime includes the network runtime and the application time needed to process header and
+                        protocol information and transfer the data from socket level to the application level.
+                    </li>
+</ul>
+<h3>Charts</h3>
+<p>
+                    The Summary charts comprise all data across requests to allow for a quick overview on request problems and
+                    performance. The tabs in this chart section contain single charts that refer to one request.
+                </p>
+<p>
+                    In the following, all chart sections below visualize this information:
+                </p>
+<ul>
+<li>Overview: moving average and individual requests</li>
+<li>Averages: median, mean, and moving average only</li>
+<li>Counts/s: number of finished requests per second</li>
+<li>Distribution: runtime segmentation</li>
+<li>Network: incoming traffic and moving average</li>
+</ul>
+<p>
+            Please note that the charts display compressed information which means that any kind of information has been mapped
+            to chart pixels. Such a pixel can stand for any time period, depending on the total test duration. Therefore, the
+            information you see is taken from several events within that time period and signifies a certain value range,
+            defined by the minimum and the maximum value measured.
+        </p>
+<p>
+            If the upper border of a chart is highlighted, the chart display has been capped.
+        </p>
+<p>*) numbers may be projected</p>
+</div>
+</div>
+<div class="c-tabs" id="tabletabbies">
+<ul class="c-tabs-nav">
+<li class="c-tabs-nav-link c-is-active">
+<a href="#Overview">Overview</a>
+</li>
+<li class="c-tabs-nav-link">
+<a href="#Bandwidth">Bandwidth</a>
+</li>
+<li class="c-tabs-nav-link">
+<a href="#NetworkTiming">Network Timing</a>
+</li>
+</ul>
+<div class="c-tab c-is-active" id="Overview">
+<table class="c-tab-content table-autosort:0 table-autostripe table-stripeclass:odd">
+<thead>
+<tr>
+<th class="table-sortable:alphanumeric colgroup1" rowspan="2">Request Name<br>
+<input placeholder="Enter filter substrings" class="filter"></th><th colspan="4">Count</th><th class="colgroup1" colspan="2">Errors</th><th colspan="4">Runtime [ms]</th><th class="colgroup1" colspan="4">Runtime Percentiles [ms]</th><th colspan="4">Runtime Segmentation [ms]</th>
+</tr>
+<tr>
+<th class="table-sortable:numeric">Total</th><th class="table-sortable:numeric">1/s</th><th class="table-sortable:numeric">1/h*</th><th class="table-sortable:numeric">1/d*</th><th class="table-sortable:numeric colgroup1">Total</th><th class="table-sortable:numeric colgroup1">%</th><th title="The arithmetic mean of the data series." class="table-sortable:numeric">Mean</th><th title="The smallest value of the data series." class="table-sortable:numeric">Min.</th><th title="The largest value of the data series." class="table-sortable:numeric">Max.</th><th title="The standard deviation of all data within this data series." class="table-sortable:numeric">Dev.</th><th title="The nth percentile of the data series." class="table-sortable:numeric colgroup1">P50</th><th title="The nth percentile of the data series." class="table-sortable:numeric colgroup1">P95</th><th title="The nth percentile of the data series." class="table-sortable:numeric colgroup1">P99</th><th title="The nth percentile of the data series." class="table-sortable:numeric colgroup1">P99.9</th><th title="A data segment and the percentage of data from the time series that is located within." class="table-sortable:numeric">&le;1,000</th><th title="A data segment and the percentage of data from the time series that is located within." class="table-sortable:numeric">&le;3,000</th><th title="A data segment and the percentage of data from the time series that is located within." class="table-sortable:numeric">&le;5,000</th><th title="A data segment and the percentage of data from the time series that is located within." class="table-sortable:numeric">&gt;5,000</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr style="display: none;" class="totals filtered"></tr>
+</tfoot>
+<tbody class="table-nosort">
+<tr>
+<td colspan="19">
+                                There are no values to show in this table.
+                            </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="c-tab" id="Bandwidth">
+<table class="c-tab-content table-autosort:0 table-autostripe table-stripeclass:odd">
+<thead>
+<tr>
+<th class="table-sortable:alphanumeric colgroup1" rowspan="2">Request Name<br>
+<input placeholder="Enter filter substrings" class="filter"></th><th colspan="8">Bytes Sent</th><th class="colgroup1" colspan="8">Bytes Received</th>
+</tr>
+<tr>
+<th class="table-sortable:numeric">Total</th><th class="table-sortable:numeric">1/s</th><th class="table-sortable:numeric">1/min</th><th class="table-sortable:numeric">1/h</th><th class="table-sortable:numeric">1/d</th><th title="The arithmetic mean." class="table-sortable:numeric">Mean</th><th class="table-sortable:numeric">Min.</th><th class="table-sortable:numeric">Max.</th><th class="table-sortable:numeric colgroup1">Total</th><th class="table-sortable:numeric colgroup1">1/s</th><th class="table-sortable:numeric colgroup1">1/min</th><th class="table-sortable:numeric colgroup1">1/h</th><th class="table-sortable:numeric colgroup1">1/d</th><th title="The arithmetic mean." class="table-sortable:numeric colgroup1">Mean</th><th class="table-sortable:numeric colgroup1">Min.</th><th class="table-sortable:numeric colgroup1">Max.</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="colgroup1"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td>
+</tr>
+<tr style="display: none;" class="totals filtered"></tr>
+</tfoot>
+<tbody class="table-nosort">
+<tr>
+<td colspan="17">There are no values to show in this table.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="c-tab" id="NetworkTiming">
+<table class="c-tab-content table-autosort:0 table-autostripe table-stripeclass:odd">
+<thead>
+<tr>
+<th class="table-sortable:alphanumeric colgroup1" rowspan="2">Request Name<br>
+<input placeholder="Enter filter substrings" class="filter"></th><th colspan="3">DNS Time [ms]</th><th class="colgroup1" colspan="3">Connect Time [ms]</th><th colspan="3">Send Time [ms]</th><th class="colgroup1" colspan="3">Server Busy Time [ms]</th><th colspan="3">Receive Time [ms]</th><th title="Time To First Bytes" class="colgroup1" colspan="3">Time to First [ms]</th><th title="Time To Last Bytes" colspan="3">Time to Last [ms]</th>
+</tr>
+<tr>
+<th title="The arithmetic mean." class="table-sortable:numeric">Mean</th><th class="table-sortable:numeric">Min.</th><th class="table-sortable:numeric">Max.</th><th title="The arithmetic mean." class="table-sortable:numeric colgroup1">Mean</th><th class="table-sortable:numeric colgroup1">Min.</th><th class="table-sortable:numeric colgroup1">Max.</th><th title="The arithmetic mean." class="table-sortable:numeric">Mean</th><th class="table-sortable:numeric">Min.</th><th class="table-sortable:numeric">Max.</th><th title="The arithmetic mean." class="table-sortable:numeric colgroup1">Mean</th><th class="table-sortable:numeric colgroup1">Min.</th><th class="table-sortable:numeric colgroup1">Max.</th><th title="The arithmetic mean." class="table-sortable:numeric">Mean</th><th class="table-sortable:numeric">Min.</th><th class="table-sortable:numeric">Max.</th><th title="The arithmetic mean." class="table-sortable:numeric colgroup1">Mean</th><th class="table-sortable:numeric colgroup1">Min.</th><th class="table-sortable:numeric colgroup1">Max.</th><th title="The arithmetic mean." class="table-sortable:numeric">Mean</th><th class="table-sortable:numeric">Min.</th><th class="table-sortable:numeric">Max.</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="colgroup1"></td><td></td><td></td><td></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td></td><td></td><td></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td></td><td></td><td></td><td class="colgroup1"></td><td class="colgroup1"></td><td class="colgroup1"></td><td></td><td></td><td></td>
+</tr>
+<tr style="display: none;" class="totals filtered"></tr>
+</tfoot>
+<tbody class="table-nosort">
+<tr>
+<td colspan="22">There are no values to show in this table.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+        Copyright (c) 2005-2017 <a title="Visit the Xceptance website" href="http://www.xceptance.com/">Xceptance Software Technologies</a>
+</div>
+</div>
+</div>
+<script src="js/xlt.js" type="text/javascript"></script>
+</body>
+</html>

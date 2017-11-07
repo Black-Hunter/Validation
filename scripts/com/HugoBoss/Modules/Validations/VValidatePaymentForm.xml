@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <command name="assertText" target="css=span.checkout__progress--text:nth-child(3)" value="Bestellangaben"/>
+  <command name="assertText" target="css= li.step-2:nth-child(3) &gt; span:nth-child(2)" value="Zahlungsarten"/>
+  <command name="assertText" target="css= li.step-3:nth-child(5) &gt; span:nth-child(2)" value="Bestellung abschließen "/>
+  <command name="assertText" target="css= .checkout-top &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)" value="Sichere Zahlung mit SSL Verschlüsselung "/>
+  <command name="assertText" target="css=#checkout-form &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)" value="Sichere Zahlung mit SSL Verschlüsselung "/>
+  <command name="assertText" target="css= div.form__item:nth-child(1) &gt; label:nth-child(3)" value="Kreditkarte "/>
+  <command name="assertText" target="css= div.form__item:nth-child(2) &gt; label:nth-child(3)" value="PayPal "/>
+  <command name="assertText" target="css= div.form__item:nth-child(3) &gt; label:nth-child(3)" value="Kauf auf Rechnung "/>
+  <command name="assertText" target="css= div.form__item:nth-child(4) &gt; label:nth-child(3)" value="Sofortüberweisung "/>
+  <command name="assertChecked" target="css= #is-CREDIT_CARD"/>
+  <command name="assertNotChecked" target="css=#is-INVOICE"/>
+  <command name="assertNotChecked" target="css= #is-PAYPAL  "/>
+  <command name="assertNotChecked" target="css= #is-ONLINE_TRANSFER"/>
+  <command name="assertVisible" target="css=  .form__wrapper--start &gt; button:nth-child(2)"/>
+  <command name="assertVisible" target="css=  .form__wrapper--start &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css=  .checkout-top &gt; div:nth-child(1) &gt; button:nth-child(2)"/>
+  <command name="assertVisible" target="css=  .checkout-top &gt; div:nth-child(1) &gt; a:nth-child(1)"/>
+</scriptmodule>

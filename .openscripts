@@ -1,0 +1,7 @@
+com.HugoBoss.Senarios.TCheckOutFullyValidated
+com.HugoBoss.Senarios.TCheckOutNoValidation
+com.HugoBoss.Senarios.TCheckOutVisualValidation
+com.HugoBoss.Modules.Navigation.AOpenHomePage
+com.HugoBoss.Senarios.TCheckoutNoValidationWithCustemAddress
+com.HugoBoss.Senarios.TCheckOutVisualValidationUsingMachineLearning
+com.HugoBoss.Modules.Basket.AAddToCart

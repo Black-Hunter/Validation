@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <command name="assertText" target="css=li.step-2:nth-child(3) &gt; span:nth-child(2)" value="Zahlungsarten"/>
+  <command name="assertText" target="css=.step-1 &gt; span:nth-child(2)" value="Bestellangaben"/>
+  <command name="assertText" target="css= li.step-3:nth-child(5) &gt; span:nth-child(2)" value="Bestellung abschließen"/>
+  <command name="assertText" target="css=#DeliveryAddress &gt; legend:nth-child(1)" value="Möchten Sie eine abweichende Lieferadresse angeben?"/>
+  <command name="assertText" target="css= #DeliveryAddress &gt; div:nth-child(2) &gt; label:nth-child(3)" value="Lieferadresse entspricht der Rechnungsadresse "/>
+  <command name="assertText" target="css= #DeliveryAddress &gt; div:nth-child(3) &gt; label:nth-child(3)" value="Abweichende Lieferadresse "/>
+  <command name="assertText" target="css= div.shiptostore-box:nth-child(5) &gt; label:nth-child(3)" value="DHL Packstation, Filiale oder PaketShop "/>
+  <command name="assertText" target="css= div.shiptostore-box:nth-child(7) &gt; label:nth-child(3)" value="Kostenlos in den Store liefern lassen (Click &amp; Collect) "/>
+  <command name="assertText" target="css= #shipping-method-list &gt; fieldset:nth-child(1) &gt; legend:nth-child(1)" value=" Versandart auswählen "/>
+  <command name="assertText" target="css= div.form__item--shipping:nth-child(2) &gt; label:nth-child(2) &gt; div:nth-child(2)">
+    <value>glob:DHL Paket Versand - Home,  Standardversand kostenfrei
+(Zustellung: Ca. 2-3 Werktage ab Bestellung)</value>
+  </command>
+  <command name="assertText" target="css= div.form__item--shipping:nth-child(3) &gt; label:nth-child(2) &gt; div:nth-child(2)">
+    <value>glob:DHL Express Versand - Home,  9,95 €
+(Zustellung: Ca. 1-2 Werktage ab Bestellung)</value>
+  </command>
+  <command name="assertChecked" target="css= #dwfrm_singleshipping_useDifferentShippingAddress-NO"/>
+  <command name="assertChecked" target="css= #shipping-method-standard"/>
+  <command name="assertNotChecked" target="css= #dwfrm_singleshipping_useDifferentShippingAddress-YES"/>
+  <command name="assertNotChecked" target="css= #useDifferentShippingAddress-PARCELSHOP_FINDER"/>
+  <command name="assertNotChecked" target="css= #useDifferentShippingAddress-SHIP_TO_STORE"/>
+  <command name="assertNotChecked" target="css= #dwfrm_singleshipping_shippingAddress_checkoutConfirmProfileTracking"/>
+  <command name="assertNotChecked" target="css= #shipping-method-express"/>
+  <command name="assertVisible" target="css= button.button:nth-child(3)"/>
+  <command name="assertVisible" target="css= a.button:nth-child(2)"/>
+  <command name="assertVisible" target="css= button.button:nth-child(2)"/>
+  <command name="assertVisible" target="css= a.button--ia-back:nth-child(1)"/>
+</scriptmodule>

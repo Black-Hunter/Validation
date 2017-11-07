@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>The new Features here are Validations and verifications of Items in the Website, which is not directly related to the Checkout Prozess .</description>
+  <command name="assertVisible" target="css= [class=&quot;header-wrapper&quot;]"/>
+  <command name="assertVisible" target="css= .main-nav__list [class ~=main-nav__item]"/>
+  <command name="assertVisible" target="css=  [class=&quot;context-nav__list-item context-nav__list-item--search js-simple-search&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--livechat&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--store-locator &quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--account&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--wishlist js-wishlist-data&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--shopping-bag&quot;]"/>
+</scriptmodule>

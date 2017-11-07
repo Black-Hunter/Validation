@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Test module </description>
+  <parameter name="searchTerm1"/>
+  <parameter name="searchTerm2"/>
+  <parameter name="SavedColor"/>
+  <parameter name="SavedName"/>
+  <parameter name="SavedSize"/>
+  <command name="click" target="css= [title=Suchen]"/>
+  <command name="waitForVisible" target="id=simpleSearch-search-sidebar"/>
+  <command name="assertVisible" target="id=simpleSearch-search-sidebar"/>
+  <command name="type" target="id=simpleSearch-search-sidebar" value="@{searchTerm1}"/>
+  <command name="clickAndWait" target="css= [type=submit]"/>
+  <command name="waitForVisible" target="css= .js--size-selection-label"/>
+  <command name="click" target="css= .js--size-selection-label"/>
+  <command name="storeText" target="css= [class=&quot;product-stage__choose-size__select-size product-stage__choose-size__select-size--emptyswatch&quot;]" value="FirstProductSize"/>
+  <command name="storeEval" target="&quot;${FirstProductSize}&quot;.toUpperCase();" value="FirstProductSize"/>
+  <command name="click" target="css= [class=&quot;product-stage__choose-size__select-size product-stage__choose-size__select-size--emptyswatch&quot;]"/>
+  <command name="waitForVisible" target="css=.product-stage__headline"/>
+  <command name="storeText" target="css= .product-stage__headline" value="FirstProductName"/>
+  <command name="storeText" target="css= div.product-stage__control-item:nth-child(1) &gt; p:nth-child(1)" value="FirstProductColor"/>
+  <command name="storeEval" target="&quot;${FirstProductColor}&quot;.toUpperCase();" value="FirstProductColor"/>
+  <command name="waitForVisible" target="css= .product-price--price-sales"/>
+  <command name="storeText" target="css= .product-price--price-sales" value="FirstProductPrice"/>
+  <command name="storeEval" target="&quot;${FirstProductPrice}&quot;.toUpperCase();" value="FirstProductPrice"/>
+  <command name="click" target="add-to-cart"/>
+  <command name="assertVisible" target="css=  [class=&quot;context-nav__list-item context-nav__list-item--search js-simple-search&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--livechat&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--store-locator &quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--account&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--wishlist js-wishlist-data&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--shopping-bag&quot;]"/>
+  <command name="click" target="css= [title=Suchen]"/>
+  <command name="waitForVisible" target="id=simpleSearch-search-sidebar"/>
+  <command name="assertVisible" target="id=simpleSearch-search-sidebar"/>
+  <command name="type" target="id=simpleSearch-search-sidebar" value="@{searchTerm2}"/>
+  <command name="clickAndWait" target="css= button.button:nth-child(2)"/>
+  <command name="waitForVisible" target="css= .js--size-selection-label"/>
+  <command name="click" target="css= .js--size-selection-label"/>
+  <command name="storeText" target="css= [class=&quot;product-stage__choose-size__select-size product-stage__choose-size__select-size--emptyswatch&quot;]" value="FirstProductSize"/>
+  <command name="storeEval" target="&quot;${FirstProductSize}&quot;.toUpperCase();" value="FirstProductSize"/>
+  <command name="click" target="css= [class=&quot;product-stage__choose-size__select-size product-stage__choose-size__select-size--emptyswatch&quot;]"/>
+  <command name="waitForVisible" target="css=.product-stage__headline"/>
+  <command name="waitForVisible" target="css= div.product-stage__control-item:nth-child(1) &gt; p:nth-child(1)"/>
+  <command name="storeText" target="css= .product-stage__headline" value="SecondProductName"/>
+  <command name="storeText" target="css= div.product-stage__control-item:nth-child(1) &gt; p:nth-child(1)" value="SecondProductColor"/>
+  <command name="storeEval" target="&quot;${SecondProductColor}&quot;.toUpperCase();" value="SecondProductColor"/>
+  <command name="assertVisible" target="css= .product-price--price-sales"/>
+  <command name="storeText" target="css= .product-price--price-sales" value="SecondProductPrice"/>
+  <command name="storeEval" target="&quot;${SecondProductPrice}&quot;.toUpperCase();" value="SecondProductPrice"/>
+  <command name="click" target="add-to-cart"/>
+  <command name="open" value="/de/cart"/>
+</scriptmodule>

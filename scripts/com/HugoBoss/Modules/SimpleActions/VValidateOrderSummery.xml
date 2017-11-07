@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module to validate the items in the order summery.</description>
+  <command name="assertVisible" target="css= button.button:nth-child(2)"/>
+  <command name="assertVisible" target="css= a.button"/>
+  <command name="waitForVisible" target="css= .item1"/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_scrollElementIntoView">
+    <parameter name="cssLocator" value=".item1"/>
+  </module>
+  <command name="assertVisible" target="css= .item1"/>
+  <command name="assertVisible" target="css= .item2"/>
+  <command name="assertVisible" target="css= .item3"/>
+  <command name="assertVisible" target="css= .item4"/>
+  <command name="assertVisible" target="css= button.button:nth-child(1)"/>
+  <command name="assertText" target="css= h3.font__label" value="IHRE BESTELLUNG"/>
+  <command name="assertText" target="css= td.order-totals--black--table:nth-child(1)" value="Gesamtsumme der Ware"/>
+  <command name="assertText" target="css= tr.order-totals__row--table:nth-child(2) &gt; td:nth-child(1) &gt; span:nth-child(1)" value=" DHL Paket Versand - Home "/>
+  <command name="assertText" target="css= .order-totals__description" value="glob:Zustellung: Ca. 2-3 Werktage ab Bestellung"/>
+  <command name="assertText" target="css= tr.order-totals__row:nth-child(3) &gt; td:nth-child(1)" value="inkl. 19% MwSt."/>
+  <command name="assertText" target="css=td.order-totals__col--result:nth-child(1)">
+    <value>Gesamtpreis
+</value>
+  </command>
+  <command name="assertText" target="css= .item1 &gt; p:nth-child(1)">
+    <value>
+
+Standardversand kostenfrei
+</value>
+  </command>
+  <command name="assertText" target="css= .item2 &gt; p:nth-child(1)">
+    <value>Kostenlose
+Rücksendung</value>
+  </command>
+  <command name="assertText" target="css=  .item3 &gt; p:nth-child(1)">
+    <value>30 Tage
+Widerrufsrecht</value>
+  </command>
+  <command name="assertText" target="css= .item4 &gt; p:nth-child(1)">
+    <value>DHL Express
+Versand
+9,95 €</value>
+  </command>
+</scriptmodule>

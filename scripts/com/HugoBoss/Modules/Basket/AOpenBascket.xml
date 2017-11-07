@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module To directs  to the Baskets site</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="open" value="/de/cart"/>
+  <command name="mouseOver" disabled="true" target="//*[contains(@class,&quot;context-nav__link js--current-cart widget-initialized&quot;)]"/>
+  <command name="click" disabled="true" target="//*[contains(@class,&quot;context-nav__link js--current-cart widget-initialized&quot;)]">
+    <comment>css= .js--current-cart</comment>
+  </command>
+  <command name="waitForVisible" disabled="true" target="css= .cart-actions &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(1) &gt; button:nth-child(1)"/>
+</scriptmodule>

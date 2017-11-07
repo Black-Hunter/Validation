@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Confirmating the Orderd items to Buy Them and Check Out</description>
+  <command name="waitForVisible" target="css= button.button:nth-child(1)"/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="check" disabled="true" target="css= #dwfrm_ordersummary_acceptTermsAndConditions"/>
+  <command name="clickAndWait" target="css= button.button:nth-child(1)"/>
+</scriptmodule>

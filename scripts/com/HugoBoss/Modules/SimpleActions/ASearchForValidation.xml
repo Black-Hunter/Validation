@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for searching for a Product By taking its number as argument in the Parameter.</description>
+  <parameter name="SearchTerm"/>
+  <command name="waitForVisible" disabled="true" target="css= .context-nav__list-item--search &gt; a:nth-child(1) &gt; svg"/>
+  <command name="assertVisible" target="css= .context-nav__list-item--search &gt; a:nth-child(1) &gt; svg"/>
+  <command name="click" target="css= .context-nav__list-item--search &gt; a:nth-child(1) &gt; svg:nth-child(1)"/>
+  <command name="waitForVisible" target="id=simpleSearch-search-sidebar"/>
+  <command name="typeAndWait" target="id=simpleSearch-search-sidebar" value="@{SearchTerm}"/>
+</scriptmodule>

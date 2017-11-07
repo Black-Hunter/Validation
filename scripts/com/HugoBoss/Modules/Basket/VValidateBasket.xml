@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>The new Features here are Validations and verifications of Items in the Website, which is directly related to the Checkout Prozess. These Items are the bought Items.</description>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value=""/>
+</scriptmodule>

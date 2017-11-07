@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Action Module to select the size</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="waitForVisible" target="//*[contains(@class,&quot;js--size-selection-label product-stage__control-item__unselcted-size&quot;)]">
+    <comment>css= .product-stage__control-item__unselcted-size</comment>
+  </command>
+  <command name="click" target="//*[contains(@class,&quot;js--size-selection-label product-stage__control-item__unselcted-size&quot;)]">
+    <comment>.product-stage__control-item__unselcted-size</comment>
+  </command>
+  <command name="waitForVisible" target="css= .product-stage__choose-size"/>
+  <codecomment>Select Size</codecomment>
+  <command name="waitForNotElementPresent" target=" css= .product-stage__choose-size product-stage__choose-size--is-hide"/>
+  <command name="click" target="css= [class=&quot;product-stage__choose-size__select-size product-stage__choose-size__select-size--emptyswatch&quot;]"/>
+</scriptmodule>

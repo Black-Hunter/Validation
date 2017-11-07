@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Filling Personal data for the Checkout Prozess.
+It Containes Parameters for the Values of Personal data, which is filled by reserved Variables in the Dataset. 
+The new Features here are Validations and verifications of the Typed or selected  fields.</description>
+  <parameter name="salutation"/>
+  <parameter name="firstName"/>
+  <parameter name="LastName"/>
+  <parameter name="Street"/>
+  <parameter name="streetNumber"/>
+  <parameter name="extraToAdress"/>
+  <parameter name="Cityzip"/>
+  <parameter name="Email"/>
+  <parameter name="BairthDay"/>
+  <parameter name="BairthMonth"/>
+  <parameter name="BairthYear"/>
+  <parameter name="NewFirstName"/>
+  <parameter name="NewLastName"/>
+  <parameter name="NewSalutation"/>
+  <parameter name="NewStreet"/>
+  <parameter name="NewStreetNumber"/>
+  <parameter name="NewExtraToAdress"/>
+  <parameter name="NewCityZip"/>
+  <parameter name="NewCity"/>
+  <parameter name="NewBairthDay"/>
+  <parameter name="City"/>
+  <command name="select" target="id=dwfrm_singleshipping_billingAddress_addressFields_salutation" value="@{salutation}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_firstName" value="@{firstName}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_lastName" value="@{LastName}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_address1" value="@{Street}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_streetNo" value="@{streetNumber}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_address2" value="@{extraToAdress}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_zip" value="@{Cityzip}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_city" value="@{City}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_email_emailAddress" value="@{Email}"/>
+  <command name="select" target="id=dwfrm_singleshipping_billingAddress_birthdayfields_day" value="@{BairthDay}"/>
+  <command name="select" target="id=dwfrm_singleshipping_billingAddress_birthdayfields_month" value="@{BairthMonth}"/>
+  <command name="select" target="id=dwfrm_singleshipping_billingAddress_birthdayfields_year" value="@{BairthYear}"/>
+  <command name="selectWindow" target="css= #DeliveryAddress"/>
+  <command name="check" target="id= #DeliveryAddress &gt; div:nth-child(4) &gt; span:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="select" target="id=dwfrm_singleshipping_billingAddress_addressFields_salutation" value="@{NewSalutation}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_firstName" value="@{NewFirstName}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_lastName" value="@{NewLastName}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_address1" value="@{NewStreet}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_streetNo" value="@{NewStreetNumber}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_address2" value="@{NewExtraToAdress}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_zip" value="@{NewCityZip}"/>
+  <command name="type" target="id=dwfrm_singleshipping_billingAddress_addressFields_city" value="@{NewCity}"/>
+  <command name="check" target="id=dwfrm_singleshipping_shippingAddress_checkoutConfirmProfileTracking"/>
+  <command name="clickAndWait" target="css= [id=checkout-form] [name=dwfrm_singleshipping_shippingAddress_save]"/>
+</scriptmodule>

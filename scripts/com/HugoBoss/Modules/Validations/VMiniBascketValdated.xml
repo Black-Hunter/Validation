@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module To directs  to the Basket</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="mouseMove" disabled="true" target="//*[contains(@class,&quot;context-nav__link js--current-cart widget-initialized&quot;)]"/>
+  <command name="click" disabled="true" target="//*[contains(@class,&quot;context-nav__link js--current-cart widget-initialized&quot;)]">
+    <comment>css= .js--current-cart</comment>
+  </command>
+  <command name="assertText" target="css= .js-cart-counter" value="2"/>
+  <command name="waitForVisible" target="css= .cart-actions &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(1) &gt; button:nth-child(1)"/>
+  <command name="assertEval" target="document.getElementsByClassName(&quot;page-title--text-title&quot;)[0].innerHTML" value="Warenkorb"/>
+  <command name="assertText" target="css= div.order-totals:nth-child(1) &gt; table:nth-child(1) &gt; tbody:nth-child(1) &gt; tr:nth-child(1) &gt; td:nth-child(1)" value="Gesamtsumme der Ware"/>
+  <command name="assertVisible" target="css= .cart-actions &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(1) &gt; button:nth-child(1)"/>
+  <command name="assertVisible" target="css=.cart-actions &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(1) &gt; a:nth-child(2)"/>
+  <command name="assertEval" target="document.getElementsByClassName(&quot;font__label font__label--large font__label--product-table font__label--product-table--sidebar&quot;)[0].innerHTML" value="Ihre Bestellung"/>
+  <command name="assertText" target="css= div.order-totals:nth-child(2) &gt; table:nth-child(1) &gt; tbody:nth-child(1) &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; span:nth-child(1)" value="DHL Paket Versand - Home"/>
+  <command name="assertText" target="css=div.order-totals:nth-child(2) &gt; table:nth-child(1) &gt; tbody:nth-child(1) &gt; tr:nth-child(3) &gt; td:nth-child(1)" value="inkl. 19% MwSt."/>
+  <command name="assertVisible" target="css= .add"/>
+  <command name="assertText" target="css= tr.order-total:nth-child(5) &gt; td:nth-child(1)" value="Gesamtpreis"/>
+  <command name="assertVisible" target="css= div.product-table__cart-actions:nth-child(8) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(1) &gt; button:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.product-table__cart-actions:nth-child(8) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(1) &gt; a:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css=div.product-table__cart-actions:nth-child(8) &gt; form:nth-child(1) &gt; a:nth-child(2)"/>
+  <command name="assertText" target="css=li.search-sidebar__suggestions:nth-child(1)" value=" Kostenloser Standardversand "/>
+  <command name="assertText" target="css=li.search-sidebar__suggestions:nth-child(2)" value=" Kostenlose Rücksendung "/>
+  <command name="assertVisible" target="css=.payment-images"/>
+  <command name="assertElementCount" target="css=.payment-images &gt; .icon" value="6"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${FirstProductColor}"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value="${FirstProductName}"/>
+  <command name="assertText" target="css= [name=&quot;dwfrm_cart_shipments_i0_items_i0_size&quot;] &gt; [selected=&quot;selected&quot;]" value="${FirstProductSize}"/>
+  <command name="assertSelectedValue" target="css=div.cart-product__wrapper:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; span:nth-child(2) &gt; span:nth-child(1) &gt; select:nth-child(3)" value="1"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; span:nth-child(1)" value="${FirstProductPrice}"/>
+  <command name="assertText" target="css= div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${SecondProductColor}"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value="${SecondProductName}"/>
+  <command name="assertText" target="css= [name=&quot;dwfrm_cart_shipments_i0_items_i1_size&quot;]  &gt; [selected=&quot;selected&quot;]" value="${SecondProductSize}"/>
+  <command name="assertSelectedValue" target="css=div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; span:nth-child(2) &gt; span:nth-child(1) &gt; select:nth-child(3)" value="1"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; span:nth-child(1)" value="${SecondProductPrice}"/>
+</scriptmodule>

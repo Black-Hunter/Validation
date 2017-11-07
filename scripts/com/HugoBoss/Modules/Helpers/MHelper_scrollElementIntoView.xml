@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Scrolls the element with the given CSS locator into the middle of the viewport.</description>
+  <parameter name="cssLocator" desc="A css element locator."/>
+  <command name="storeEval" value="unusedVariable">
+    <target>(function(){
+var el = document.querySelector("@{cssLocator}");
+var r = el.getBoundingClientRect();
+var y = (r.bottom + r.top - window.innerHeight) / 2;
+window.scrollTo(0, y);
+})()</target>
+    <comment>This function scrolls the given CSS element into the middle of the viewport. This is necessary for clicking or selecting elements that are not inside the viewport, if the test is run with any firefox webdriver.</comment>
+  </command>
+</scriptmodule>

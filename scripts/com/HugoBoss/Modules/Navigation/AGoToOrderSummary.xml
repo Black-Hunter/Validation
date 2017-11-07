@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module directs to Order Summery</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_scrollElementIntoView">
+    <parameter name="cssLocator" value=".checkout-top &gt; div:nth-child(1) &gt; button:nth-child(2)"/>
+  </module>
+  <command name="clickAndWait" target="css=.checkout-top &gt; div:nth-child(1) &gt; button:nth-child(2)"/>
+</scriptmodule>

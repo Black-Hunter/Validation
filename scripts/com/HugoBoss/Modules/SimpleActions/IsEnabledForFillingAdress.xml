@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javamodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" class="com.jihad.Classes.ForTest.IsEnebeldElement">
+  <description>Test Module</description>
+</javamodule>

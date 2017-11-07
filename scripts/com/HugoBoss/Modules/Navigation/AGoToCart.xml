@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module directs to the Payment Opitions.</description>
+  <command name="waitForVisible" disabled="true" target="css=  .js--current-cart &gt; svg:nth-child(1)"/>
+  <command name="assertVisible" disabled="true" target="css=  .js--current-cart &gt; svg:nth-child(1)"/>
+  <command name="click" target="css=  .js--current-cart &gt; svg:nth-child(1)"/>
+  <command name="waitForVisible" target="css= div.clearfix:nth-child(2) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; a:nth-child(1)"/>
+  <command name="clickAndWait" target="css= div.clearfix:nth-child(2) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; a:nth-child(1)"/>
+</scriptmodule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module Validate the appearance of the right page. The Module failes if the the next page is not visible or the it  characteristics doesnt appear.</description>
+  <parameter name="pageCharacteristics"/>
+  <parameter name="value"/>
+  <command name="assertEval" target="@{pageCharacteristics}" value="@{value}"/>
+</scriptmodule>

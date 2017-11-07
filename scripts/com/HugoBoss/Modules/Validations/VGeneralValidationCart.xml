@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>The new Features here are Validations and verifications of Items in the Website, which is not directly related to the Checkout Prozess .</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="assertVisible" target="css= [class=&quot;header-wrapper&quot;]"/>
+  <command name="assertVisible" target="css= .main-nav__list [class ~=main-nav__item]"/>
+  <command name="assertVisible" target="css=  [class=&quot;context-nav__list-item context-nav__list-item--search js-simple-search&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--livechat&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--store-locator &quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--account&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--wishlist js-wishlist-data&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--shopping-bag&quot;]"/>
+  <command name="assertEval" target="document.getElementsByClassName(&quot;font__label font__label--large font__label--product-table font__label--product-table--table&quot;)[0].innerHTML" value="Ihre Bestellung"/>
+  <command name="assertText" target="css=div.order-totals:nth-child(2) &gt; table:nth-child(1) &gt; tbody:nth-child(1) &gt; tr:nth-child(1) &gt; td:nth-child(1)" value="Gesamtsumme der Ware"/>
+  <command name="assertText" target="css=div.order-totals:nth-child(2) &gt; table:nth-child(1) &gt; tbody:nth-child(1) &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; span:nth-child(1)" value=" DHL Paket Versand - Home "/>
+  <command name="assertText" target="css=div.order-totals:nth-child(2) &gt; table:nth-child(1) &gt; tbody:nth-child(1) &gt; tr:nth-child(2) &gt; td:nth-child(1) &gt; div:nth-child(2)" value="glob:Zustellung: Ca. 2-3 Werktage ab Bestellung"/>
+  <command name="assertText" target="css=div.order-totals:nth-child(2) &gt; table:nth-child(1) &gt; tbody:nth-child(1) &gt; tr:nth-child(3) &gt; td:nth-child(1)" value="inkl. 19% MwSt."/>
+  <command name="assertText" target="css=tr.order-total:nth-child(5) &gt; td:nth-child(1)" value="Gesamtpreis"/>
+  <command name="assertVisible" target="css=div.product-table__cart-actions:nth-child(8) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(2) &gt; a:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css=div.product-table__cart-actions:nth-child(8) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(2) &gt; button:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.product-table__cart-actions:nth-child(8) &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; button:nth-child(1)"/>
+  <command name="assertVisible" target="css=div.product-table__cart-actions:nth-child(8) &gt; form:nth-child(1) &gt; a:nth-child(2)"/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_scrollElementIntoView">
+    <parameter name="cssLocator" value="section.cms-core__fullbleed--gap:nth-child(1) &gt; h3:nth-child(1)"/>
+  </module>
+  <command name="assertEval" target="document.querySelectorAll('section.cms-core__fullbleed--gap:nth-child(1) &gt; h3:nth-child(1)')[0].innerHTML" value="Hilfe &amp;amp; Kontakt"/>
+  <command name="assertText" target="css= .cms-related-content-teaser__item-1 &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; a:nth-child(2) &gt; p:nth-child(1) &gt; b:nth-child(1)" value="Kontaktformular"/>
+  <command name="waitForVisible" target="css= #livePersonChatButtonService"/>
+  <command name="assertText" target="css= #livePersonChatButtonService">
+    <value>Live Chat
+                        </value>
+  </command>
+  <command name="assertText" target="css=.cms-related-content-teaser__item-0 &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; a:nth-child(2) &gt; p:nth-child(1)">
+    <value>								+49 7123 3788 9911
+                        
+                        </value>
+  </command>
+  <command name="assertText" target="css= .cms-related-content-teaser__items--column-count-2 &gt; li:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; p:nth-child(1)">
+    <value> Standard Versand kostenfrei 
+                        
+                        </value>
+  </command>
+  <command name="assertVisible" target="css=.cms-related-content-teaser__items--column-count-2 &gt; li:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1)"/>
+  <command name="assertElementCount" target="css=.cms-related-content-teaser__items--column-count-2 &gt; li:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; span" value="6"/>
+  <command name="assertVisible" target="css=.cms-related-content-teaser__items--column-count-2 &gt; li:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)"/>
+  <command name="assertElementCount" target="css=.cms-related-content-teaser__items--column-count-2 &gt; li:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; span" value="2"/>
+  <command name="assertElementPresent" target="css= div.cms-footer__item:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css=div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(4) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css=div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(5) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css=div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3)"/>
+  <command name="assertVisible" target="css=div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(4)"/>
+  <command name="assertVisible" target="css= .cms-footer__item--first &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= .icon-new_instagram"/>
+  <command name="assertVisible" target="css=.icon-new_twitter"/>
+  <command name="assertVisible" target="css= .icon-new_fb"/>
+  <command name="assertVisible" target="css= .icon-new_pinterest"/>
+  <command name="assertVisible" target="css=.icon-new_youtube"/>
+  <command name="assertVisible" target="css=.icon-new_google"/>
+  <command name="assertVisible" target="css= img.icon"/>
+  <command name="assertVisible" target="css= .icon-new_instagram"/>
+  <command name="assertText" target="css= .footer__disclaimer">
+    <value>Bitte beachten Sie, dass sich Ihre Rechnungs- und Lieferanschrift in der Bundesrepublik Deutschland befinden muss. Eine Lieferung auf die Insel Helgoland und in die Gemeinde Büsingen am Hochrhein ist leider ausgeschlossen.</value>
+  </command>
+  <command name="assertText" target="css= .footer__copyright" value="© 2017 HUGO BOSS All rights reserved."/>
+  <command name="assertEval" target="document.querySelectorAll('.footer__change-country &gt; div:nth-child(1)')[0].innerHTML.indexOf(&quot;Change country&quot;) != -1" value="true"/>
+  <command name="assertText" target="css= .footer__change-country &gt; div:nth-child(1) &gt; a:nth-child(1)" value="Deutschland"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(1) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(2)"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(3)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(4)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(5)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(6)"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(7)"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(8)"/>
+  <command name="assertVisible" target="css= .main-logo"/>
+</scriptmodule>

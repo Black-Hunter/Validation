@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javamodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" class="com.xceptance.xlt.visualassertion.VisualAssertion">
+  <description>Module for taking Screenshots on the browser. This Module doesnt work on XLT Script Developer. Its meant to be used for Visual assert Test and Machine learning Test. </description>
+</javamodule>

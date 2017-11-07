@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for searching for a Product By taking its number as argument in the Parameter.</description>
+  <parameter name="searchTerm"/>
+  <codecomment>Save Data of Product</codecomment>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="waitForVisible" target="css= .context-nav__list-item--search &gt; a:nth-child(1) "/>
+  <command name="assertVisible" target="css= .context-nav__list-item--search &gt; a:nth-child(1) &gt; svg"/>
+  <command name="waitForVisible" target="//*[contains ( @class, 'context-nav__list-item context-nav__list-item--search js-simple-search')]"/>
+  <command name="click" target="//*[contains ( @class, 'context-nav__list-item context-nav__list-item--search js-simple-search')]">
+    <comment>css= .context-nav__list-item--search &gt; a:nth-child(1) &gt; svg:nth-child(1)
+.context-nav__list-item--search &gt; a:nth-child(1)</comment>
+  </command>
+  <command name="waitForVisible" target="id=simpleSearch-search-sidebar"/>
+  <module name="com.HugoBoss.Modules.Navigation.VPage">
+    <parameter name="pageCharacteristics" value="document.getElementsByClassName(&quot;font__label font__label--large search-sidebar__title&quot;)[0].innerHTML"/>
+    <parameter name="value" value="Suchen"/>
+  </module>
+  <module name="com.HugoBoss.Modules.Navigation.VPage">
+    <parameter name="pageCharacteristics" value="document.querySelectorAll(&quot;.js--search-suggestion-wrapper__static-suggestions &gt; h1:nth-child(1)&quot;)[0].innerHTML"/>
+    <parameter name="value" value="VORSCHLÄGE"/>
+  </module>
+  <command name="assertVisible" target="css= li.search-sidebar__suggestions:nth-child(1) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= li.search-sidebar__suggestions:nth-child(2) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= li.search-sidebar__suggestions:nth-child(3) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= li.search-sidebar__suggestions:nth-child(4) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= li.search-sidebar__suggestions:nth-child(5) &gt; a:nth-child(1)"/>
+  <command name="waitForVisible" target="css= .search-sidebar__title"/>
+  <command name="typeAndWait" target="id=simpleSearch-search-sidebar" value="@{searchTerm}"/>
+</scriptmodule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Filling Banking data for the Checkout Prozess.
+It Containes Parameters for the Values of Personal data, which is filled by reserved Variables in the Dataset. 
+</description>
+  <parameter name="account"/>
+  <parameter name="expDate"/>
+  <parameter name="expYear"/>
+  <parameter name="securityCode"/>
+  <command name="check" target="css= #is-CREDIT_CARD"/>
+  <command name="waitForVisible" target="css= .wirecard-seamless-frame "/>
+  <command name="selectFrame" target="css= .wirecard-seamless-frame"/>
+  <command name="type" target="id=account_number" value="@{account}"/>
+  <command name="select" target="css= #expiration_month_list" value="@{expDate}"/>
+  <command name="type" target="css= #card_security_code" value="@{securityCode}"/>
+  <command name="select" target="css= #expiration_year_list" value="@{expYear}"/>
+  <command name="selectFrame" target="relative=top"/>
+</scriptmodule>

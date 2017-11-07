@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" baseURL="http://dev.hugoboss.com/de">
+  <tags>http://username:password@example.com</tags>
+  <description>This test case Provides the minimum requierments for a Checkout Prozess,  Validation and Verification are not requierd.</description>
+  <codecomment>Opening the Homepage and Cleaing the Cookies. it is necessary to have a frish start.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AOpenHomePage"/>
+  <command name="waitForVisible" disabled="true" target="css= .newsletterFastSubscribeFormContent"/>
+  <command name="click" disabled="true" target="css= .lightbox__wrapper--centered-content &gt; button:nth-child(2)"/>
+  <codecomment>Start searching for the first product. The search Term is declared as "test data". if the product is not available you need to choose a new number and add it to the test data.</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASearch">
+    <condition disabled="true">NoCondition</condition>
+    <parameter name="searchTerm" value="${FirstSearchTerm}"/>
+  </module>
+  <command name="echo" value="${document.getElementsByClassName(&quot;js--size-selection-label&quot;).textContent }"/>
+  <codecomment>select  a number for a size the first avilable one. A condition added to avoid fail trying to choose a number is just avilable in one size.</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASelectSize">
+    <condition>document.body.contains(document.getElementsByClassName("js--size-selection-label")[0]) &amp;&amp; document.getElementsByClassName("js--size-selection-label")[0].textContent  ==  "Bitte Größe wählen"</condition>
+  </module>
+  <codecomment>After selecting the product it must be added to the cart to continue buying</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.AAddToCart"/>
+  <codecomment>Start searching for the second product. The search Term is declared as "test data". if the product is not available you need to choose a new number and add it to the test data.</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASearch">
+    <parameter name="searchTerm" value="${SecondSearchTerm}"/>
+  </module>
+  <codecomment>select  a number for a size the second avilable one. A condition added to avoid fail trying to choose a number is just avilable in one size.</codecomment>
+  <module name="com.HugoBoss.Modules.SimpleActions.ASelectSize">
+    <condition>document.body.contains(document.getElementsByClassName("js--size-selection-label")[0]) &amp;&amp; document.getElementsByClassName("js--size-selection-label")[0].textContent  ==  "Bitte Größe wählen"</condition>
+  </module>
+  <codecomment>Buying the product after selecting the size.</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.AAddToCart"/>
+  <codecomment>opining the basket.</codecomment>
+  <module name="com.HugoBoss.Modules.Basket.AOpenBascket"/>
+  <codecomment>Direction to the Regestration Page.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToRegestration"/>
+  <codecomment>Direction to the personalform Page.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToPersonaldata"/>
+  <codecomment>Filling the personalform.</codecomment>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.AFillPersonalData">
+    <parameter name="salutation" value="${Salutation}"/>
+    <parameter name="firstName" value="${FirstName}"/>
+    <parameter name="lastName" value="${LastName}"/>
+    <parameter name="street" value="${Street}"/>
+    <parameter name="streetNumber" value="${StreetNumber}"/>
+    <parameter name="ZipCode" value="${ZIPCODE}"/>
+    <parameter name="City" value="${CITY}"/>
+    <parameter name="AddToAdress" value="${AddToAdress}"/>
+    <parameter name="Email" value="${Email}"/>
+  </module>
+  <codecomment>Direction to the paymentform Page.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToPaymentOption"/>
+  <codecomment>Filling the paymentform.</codecomment>
+  <module name="com.HugoBoss.Modules.PersonalDataAndPayment.APayCreditCard">
+    <parameter name="account" value="${VISACODE}"/>
+    <parameter name="expDate" value="${Month}"/>
+    <parameter name="expYear" value="${YEAR}"/>
+    <parameter name="securityCode" value="${secCode}"/>
+  </module>
+  <codecomment>Direction to the order summery Page.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AGoToOrderSummary"/>
+  <codecomment>direct to confermation and submitting.</codecomment>
+  <module name="com.HugoBoss.Modules.Navigation.AConfirm"/>
+</testcase>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Validation Module for adress form validation</description>
+  <command name="assertVisible" target="css=#selectdwfrm_singleshipping_billingAddress_addressFields_salutation"/>
+  <command name="assertVisible" target="css= #dwfrm_singleshipping_billingAddress_addressFields_firstName"/>
+  <command name="assertVisible" target="css= #dwfrm_singleshipping_billingAddress_addressFields_lastName"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address1"/>
+  <command name="assertVisible" target="css= #dwfrm_singleshipping_billingAddress_addressFields_streetNo"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_address2"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_zip"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_addressFields_city"/>
+  <command name="assertVisible" target="css=#dwfrm_singleshipping_billingAddress_email_emailAddress"/>
+  <command name="assertVisible" disabled="true" target="css=div.form__item--w33:nth-child(2) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="assertVisible" disabled="true" target="css=div.form__item--w33:nth-child(3) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="assertVisible" disabled="true" target="css=div.form__item--w33:nth-child(4) &gt; span:nth-child(3) &gt; span:nth-child(1) &gt; svg:nth-child(2)"/>
+  <command name="assertVisible" target="css=.form__item--label-inline &gt; span:nth-child(2) &gt; span:nth-child(1)"/>
+</scriptmodule>

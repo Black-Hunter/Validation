@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>The new Features here are Validations and verifications of Items in the Website, which is not directly related to the Checkout Prozess .</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="assertVisible" target="css= .header-wrapper"/>
+  <command name="assertVisible" target="css= .main-nav__list [class ~=main-nav__item]"/>
+  <command name="assertVisible" target="css=  [class=&quot;context-nav__list-item context-nav__list-item--search js-simple-search&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--livechat&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--store-locator &quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--account&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--wishlist js-wishlist-data&quot;]"/>
+  <command name="assertVisible" target="css= [class=&quot;context-nav__list-item context-nav__list-item--shopping-bag&quot;]"/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_scrollElementIntoView">
+    <parameter name="cssLocator" value=".newsletter-signin__headline"/>
+  </module>
+  <command name="assertText" target="css= .newsletter-signin__headline" value="Online Store Newsletter "/>
+  <command name="assertText" target="css=.newsletter-signin__subtext">
+    <value>Seien Sie immer up-to-date mit dem Newsletter des HUGO BOSS Online Stores - neue Produkte, exklusive Specials, Lifestyle und Fashion Trends.</value>
+  </command>
+  <command name="assertVisible" target="css= .form__item"/>
+  <command name="assertText" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(1)">
+    <value>
+                        Das Unternehmen
+                        </value>
+  </command>
+  <command name="assertText" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1)">
+    <value>
+                        Services
+                        
+                        </value>
+  </command>
+  <command name="assertText" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1)">
+    <value>
+                        Kontakt
+                        
+                        </value>
+  </command>
+  <command name="assertText" target="css=.cms-footer &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1)">
+    <value>
+                        Fashion Guides
+                                       </value>
+  </command>
+  <command name="assertText" target="css= .cms-footer__item--first &gt; div:nth-child(1)">
+    <value>
+ Last Season Sale 
+		
+                        </value>
+  </command>
+  <command name="assertElementPresent" target="css= div.page-width-wrapper__inner--in-navigation:nth-child(5) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; section:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; a:nth-child(1)"/>
+  <command name="assertElementPresent" target="css= div.page-width-wrapper__inner--in-navigation:nth-child(5) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; section:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; a:nth-child(2)"/>
+  <command name="assertElementPresent" target="css= div.page-width-wrapper__inner--in-navigation:nth-child(5) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; section:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; a:nth-child(3)"/>
+  <command name="assertVisible" target="css=.livechat"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2)"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3)"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(4)"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(5)"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3)"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(5) &gt; a:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item-copy:nth-child(7) &gt; a:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item-copy:nth-child(9)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item-copy:nth-child(11) &gt; a:nth-child(2) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item-copy:nth-child(12)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3)"/>
+  <command name="assertVisible" target="css=div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(4)"/>
+  <command name="assertVisible" target="css= .cms-footer__item--first &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css= .cms-footer &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css=section.cms-freestyle:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= div.cms-footer__item:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; a:nth-child(1) &gt; span:nth-child(1)"/>
+  <command name="assertVisible" target="css= .icon-new_instagram"/>
+  <command name="assertVisible" target="css=.icon-new_twitter"/>
+  <command name="assertVisible" target="css= .icon-new_fb"/>
+  <command name="assertVisible" target="css= .icon-new_pinterest"/>
+  <command name="assertVisible" target="css=.icon-new_youtube"/>
+  <command name="assertVisible" target="css=.icon-new_google"/>
+  <command name="assertVisible" target="css= img.icon"/>
+  <command name="assertVisible" target="css= .icon-new_instagram"/>
+  <command name="assertText" target="css= .footer__disclaimer">
+    <value>Bitte beachten Sie, dass sich Ihre Rechnungs- und Lieferanschrift in der Bundesrepublik Deutschland befinden muss. Eine Lieferung auf die Insel Helgoland und in die Gemeinde Büsingen am Hochrhein ist leider ausgeschlossen.</value>
+  </command>
+  <command name="assertText" target="css= .footer__copyright" value="© 2017 HUGO BOSS All rights reserved."/>
+  <command name="assertEval" target="document.querySelectorAll('.footer__change-country &gt; div:nth-child(1)')[0].innerHTML.indexOf(&quot;Change country&quot;) != -1" value="true"/>
+  <command name="assertText" target="css= .footer__change-country &gt; div:nth-child(1) &gt; a:nth-child(1)" value="Deutschland"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(1) &gt; a:nth-child(1)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(2)"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(3)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(4)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(5)"/>
+  <command name="assertVisible" target="css=.footer__links &gt; li:nth-child(6)"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(7)"/>
+  <command name="assertVisible" target="css= .footer__links &gt; li:nth-child(8)"/>
+  <command name="assertVisible" target="css= .main-logo"/>
+</scriptmodule>

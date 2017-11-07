@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Helper module helps to parse numbers inside a string. sometimes it is necessary for random numbers.   </description>
+  <command name="storeEval" value="integer">
+    <target>(function() {
+var text =document.querySelectorAll(".checkout__confirmation-message &gt; p:nth-child(3)")[0].innerHTML;
+var thenum = text.replace( /^\D+/g, '');
+var number = parseInt(thenum);
+ return number;
+})()</target>
+  </command>
+</scriptmodule>

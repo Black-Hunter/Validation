@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module directs to the Regestration Page, Where used to direct to personaldata opitions</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_scrollElementIntoView">
+    <parameter name="cssLocator" value=".cart-actions &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(2) &gt; button:nth-child(1)"/>
+  </module>
+  <command name="clickAndWait" target="css= .cart-actions &gt; form:nth-child(1) &gt; fieldset:nth-child(1) &gt; span:nth-child(2) &gt; button:nth-child(1)"/>
+</scriptmodule>

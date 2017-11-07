@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module directs to the Payment Opitions.</description>
+  <command name="clickAndWait" target="css= button.button:nth-child(3) &gt; svg:nth-child(1)"/>
+</scriptmodule>

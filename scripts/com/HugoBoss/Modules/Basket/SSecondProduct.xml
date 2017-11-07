@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Storing module, it save the data of the first Product.
+#Name as Uppercase
+#Color as Uppercase
+#size 
+#Quantity</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="waitForVisible" target="css= .product-stage__control-item__selcted-size"/>
+  <command name="storeText" target="css= .product-stage__control-item__selcted-size" value="SecondProductSize"/>
+  <command name="storeText" target="css= .product-stage__headline" value="SecondProductName"/>
+  <command name="storeText" target="css= div.product-stage__control-item:nth-child(1) &gt; p:nth-child(1)" value="SecondProductColor"/>
+  <command name="storeEval" target="&quot;${SecondProductColor}&quot;.toUpperCase();" value="SecondProductColor"/>
+  <command name="storeText" target="css= .product-price--price-sales" value="SecondProductPrice"/>
+</scriptmodule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Filling Personal data for the Checkout Prozess.
+It Containes Parameters for the Values of Personal data, which is filled by reserved Variables in the Dataset. </description>
+  <parameter name="newsalutation"/>
+  <parameter name="newfirstName"/>
+  <parameter name="newlastName"/>
+  <parameter name="newstreet"/>
+  <parameter name="newstreetNumber"/>
+  <parameter name="newZipCode"/>
+  <parameter name="newCity"/>
+  <parameter name="newAddToAddress"/>
+  <command name="waitForVisible" target="css= #dwfrm_singleshipping_shippingAddress"/>
+  <command name="check" target="css= #dwfrm_singleshipping_useDifferentShippingAddress-YES"/>
+  <command name="select" target="css=#dwfrm_singleshipping_shippingAddress_addressFields_salutation" value="@{newsalutation}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_shippingAddress_addressFields_firstName" value="@{newfirstName}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_shippingAddress_addressFields_lastName" value="@{newlastName}"/>
+  <command name="type" target="css=#dwfrm_singleshipping_shippingAddress_addressFields_address1" value="@{newstreet}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_shippingAddress_addressFields_streetNo" value="@{newstreetNumber}"/>
+  <command name="type" target="css=#dwfrm_singleshipping_shippingAddress_addressFields_address2" value="@{newAddToAddress}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_shippingAddress_addressFields_zip" value="@{newZipCode}"/>
+  <command name="type" target="css= #dwfrm_singleshipping_shippingAddress_addressFields_city" value="@{newCity}"/>
+</scriptmodule>

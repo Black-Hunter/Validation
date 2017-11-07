@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>The new Features here are Validations and verifications of Items in the Website, which is directly related to the Checkout Prozess. These Items are the bought Items.</description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="assertText" target="css=tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${FirstProductColor}"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.VFirefoxSize">
+    <condition>typeof InstallTrigger !== 'undefined'</condition>
+    <parameter name="Text" value="GRÖSSE"/>
+    <parameter name="Pattern" value="${FirstProductSize}"/>
+    <parameter name="Target" value="css=tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; span:nth-child(1)"/>
+    <parameter name="Text_2" value=""/>
+  </module>
+  <module name="com.HugoBoss.Modules.SimpleActions.VChromeSize">
+    <condition>!!window.chrome &amp;&amp; !!window.chrome.webstore</condition>
+    <parameter name="Text" value="GRÖSSE"/>
+    <parameter name="Pattern" value="${FirstProductSize}"/>
+    <parameter name="Text_2" value=""/>
+    <parameter name="Target" value="css=tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; span:nth-child(1)"/>
+  </module>
+  <command name="assertText" target="css= tr.product-table__row--body:nth-child(1) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value="${FirstProductName}"/>
+  <command name="assertText" target="css=tr.product-table__row--body:nth-child(1) &gt; td:nth-child(3) &gt; span:nth-child(2)" value="1"/>
+  <command name="assertText" target="css=tr.product-table__row--body:nth-child(1) &gt; td:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${FirstProductPrice}"/>
+  <command name="assertText" target="css=tr.product-table__row--table:nth-child(2) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${SecondProductColor}"/>
+  <module name="com.HugoBoss.Modules.SimpleActions.VFirefoxSize">
+    <condition>typeof InstallTrigger !== 'undefined'</condition>
+    <parameter name="Text" value="GRÖSSE"/>
+    <parameter name="Pattern" value="${SecondProductSize}"/>
+    <parameter name="Target" value="css=tr.product-table__row--table:nth-child(2) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; span:nth-child(1)"/>
+    <parameter name="Text_2" value=""/>
+  </module>
+  <module name="com.HugoBoss.Modules.SimpleActions.VChromeSize">
+    <condition>!!window.chrome &amp;&amp; !!window.chrome.webstore</condition>
+    <parameter name="Text" value="GRÖSSE"/>
+    <parameter name="Pattern" value="${SecondProductSize}"/>
+    <parameter name="Text_2" value=""/>
+    <parameter name="Target" value="css=tr.product-table__row--table:nth-child(2) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(3) &gt; span:nth-child(1)"/>
+  </module>
+  <command name="assertText" target="css= tr.product-table__row--table:nth-child(2) &gt; td:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value="${SecondProductName}"/>
+  <command name="assertText" target="css=tr.product-table__row--table:nth-child(2) &gt; td:nth-child(3) &gt; span:nth-child(2)" value="1"/>
+  <command name="assertText" target="css=tr.product-table__row--table:nth-child(2) &gt; td:nth-child(4) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${SecondProductPrice}"/>
+</scriptmodule>

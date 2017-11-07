@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This a Test Module</description>
+  <codecomment>Starting Home Page and Deleting the Coockies</codecomment>
+  <command name="open" value="${BaseURL}"/>
+  <command name="deleteAllVisibleCookies"/>
+  <command name="open" value="${BaseURL}"/>
+  <command name="waitForVisible" target="css= .context-nav__list-item--search &gt; a:nth-child(1) &gt; svg:nth-child(1)"/>
+  <codecomment>Checking the Visibility of the Elements in the Menue</codecomment>
+  <module name="com.HugoBoss.Modules.VGeneralValidation"/>
+  <module name="com.HugoBoss.Modules.ASearch">
+    <condition disabled="true">NoCondition</condition>
+    <parameter name="searchTerm" value="50330503"/>
+  </module>
+  <module name="com.HugoBoss.Modules.ABuyForValidationParameterized">
+    <parameter name="itemNumber" value="first"/>
+  </module>
+  <command name="echo" value="${firstProductSize}"/>
+</testcase>

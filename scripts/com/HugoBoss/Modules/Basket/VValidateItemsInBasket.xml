@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>The new Features here are Validations and verifications of Items in the Website, which is directly related to the Checkout Prozess. These Items are the bought Items.</description>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${FirstProductColor}"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)" value="${FirstProductName}"/>
+  <command name="assertText" target="css=[name=&quot;dwfrm_cart_shipments_i0_items_i0_quantity&quot;] &gt; [selected=&quot;selected&quot;]" value="1"/>
+  <command name="assertText" target="css= [name=&quot;dwfrm_cart_shipments_i0_items_i0_size&quot;] &gt; [selected=&quot;selected&quot;]" value="${FirstProductSize}"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${FirstProductPrice}"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${SecondProductColor}"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; a:nth-child(1)" value="${SecondProductName}"/>
+  <command name="assertText" target="css=[name=&quot;dwfrm_cart_shipments_i0_items_i1_quantity&quot;] &gt; [selected=&quot;selected&quot;]" value="1"/>
+  <command name="assertText" target="css= [name=&quot;dwfrm_cart_shipments_i0_items_i1_size&quot;] &gt; [selected=&quot;selected&quot;]" value="${SecondProductSize}"/>
+  <command name="assertText" target="css=div.cart-product__wrapper:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; span:nth-child(1)" value="${SecondProductPrice}"/>
+</scriptmodule>

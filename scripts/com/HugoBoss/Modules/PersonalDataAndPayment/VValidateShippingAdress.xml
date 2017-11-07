@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>The new Features here are Validations and verifications of the Shipping Adress. </description>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <command name="waitForVisible" target="css= .mini-shipment &gt; h3:nth-child(1)"/>
+  <command name="assertText" target="css= .mini-shipment &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)" value="${Salutation}"/>
+  <command name="assertText" target="css= .mini-shipment &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1)" value="${FirstName}  ${LastName}"/>
+  <command name="assertText" target="css= .mini-shipment &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1)" value="${Street} ${StreetNumber}"/>
+  <command name="assertText" target="css= .mini-shipment &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(1)" value="${AddToAdress}"/>
+  <command name="assertText" target="css= .mini-shipment &gt; div:nth-child(2) &gt; div:nth-child(5) &gt; div:nth-child(1)" value="${ZIPCODE} ${CITY}"/>
+  <command name="assertText" target="css= .mini-shipment &gt; div:nth-child(2) &gt; div:nth-child(6) &gt; div:nth-child(1)" value="${Country}"/>
+  <command name="waitForVisible" target="css=.mini-billing-address &gt; h3:nth-child(1)"/>
+  <command name="assertText" target="css= .mini-billing-address &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(1)" value="${NewSalutation}"/>
+  <command name="assertText" target="css= .mini-billing-address &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div:nth-child(1)" value="${NewFirstName} ${NewLastName}"/>
+  <command name="assertText" target="css=.mini-billing-address &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(1)" value="${NewStreet} ${NewStreetNumber}"/>
+  <command name="assertText" target="css= .mini-billing-address &gt; div:nth-child(2) &gt; div:nth-child(4) &gt; div:nth-child(1)" value="${AddToAdress}"/>
+  <command name="assertText" target="css= .mini-billing-address &gt; div:nth-child(2) &gt; div:nth-child(5) &gt; div:nth-child(1)" value="${NewZIPCODE} ${NewCITY}"/>
+  <command name="assertText" target="css= .mini-billing-address &gt; div:nth-child(2) &gt; div:nth-child(6) &gt; div:nth-child(1)" value="${Country}"/>
+</scriptmodule>

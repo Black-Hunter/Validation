@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Buying Items been searched for in a previous Module namely Search-Module</description>
+  <command name="waitForVisible" target="css= .swatch-list__button--is-large"/>
+  <command name="waitForVisible" target="css= .product-stage__headline"/>
+  <command name="waitForVisible" target="css= .product-stage__control-item__size  span"/>
+  <command name="assertVisible" target="css= .product-stage__control-item__size  span"/>
+  <command name="waitForVisible" target="css= .js--size-selection-label"/>
+  <command name="click" target="css= .js--size-selection-label"/>
+  <codecomment>Select Size</codecomment>
+  <command name="click" target="css= [class=&quot;product-stage__choose-size__select-size product-stage__choose-size__select-size--emptyswatch&quot;]"/>
+  <command name="waitForVisible" target="css= #add-to-cart &gt; svg:nth-child(1)"/>
+  <command name="waitForClass" disabled="true" target="css= #add-to-cart " value="button"/>
+  <command name="click" target="css= #add-to-cart &gt; svg:nth-child(1)"/>
+  <command name="waitForVisible" target="css= div.-is--sidebar-recommendation:nth-child(8)"/>
+  <command name="waitForVisible" target="css=  div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2) "/>
+  <command name="waitForElementPresent" target="css=  div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2) "/>
+  <command name="click" target="css=  div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2) "/>
+</scriptmodule>

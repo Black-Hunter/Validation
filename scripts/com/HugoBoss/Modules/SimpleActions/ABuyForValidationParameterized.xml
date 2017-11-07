@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Buying Items been searched for in a previous Module namely Search-Module.
+The difference  between this module and Buy-Module is that this Module Validate Every Step and store the Items that been bought.</description>
+  <parameter name="itemNumber" desc="Das wie vielte Item ist das"/>
+  <command name="waitForVisible" target="css= .js--size-selection-label"/>
+  <command name="click" target="css= .js--size-selection-label"/>
+  <command name="storeEval" target="&quot;${@{itemNumber}ProductSize}&quot;.toUpperCase();" value="@{itemNumber}ProductSize"/>
+  <command name="click" target="css= [class=&quot;product-stage__choose-size__select-size product-stage__choose-size__select-size--emptyswatch&quot;]"/>
+  <command name="waitForVisible" target="css=.product-stage__headline"/>
+  <command name="waitForVisible" target="css= .product-price--price-sales"/>
+  <command name="storeEval" target="&quot;${@{itemNumber}ProductPrice}&quot;.toUpperCase();" value="@{itemNumber}ProductPrice"/>
+  <command name="click" target="css= div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2)"/>
+  <command name="click" target="css= #add-to-cart"/>
+  <command name="waitForVisible" target="css= div.-is--sidebar-recommendation:nth-child(8)"/>
+  <command name="waitForVisible" target="css=  div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2) "/>
+  <command name="click" target="css=  div.sidebar__wrapper:nth-child(1) &gt; button:nth-child(2) "/>
+</scriptmodule>

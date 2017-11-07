@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This Module is responsible for  Filling Banking data for the Checkout Prozess.
+It Containes Parameters for the Values of Personal data, which is filled by reserved Variables in the Dataset. 
+The new Features here are Validations and verifications of the Typed or selected  fields.</description>
+  <parameter name="account"/>
+  <parameter name="expDate"/>
+  <parameter name="securityCode"/>
+  <parameter name="expYear"/>
+  <action name="chooseCredit"/>
+  <command name="waitForVisible" target="css= .wirecard-seamless-frame"/>
+  <command name="assertVisible" target="css= .form__custom-radio--checked"/>
+  <command name="check" target="css=#is-CREDIT_CARD"/>
+  <command name="assertChecked" target="css=#is-CREDIT_CARD"/>
+  <command name="waitForVisible" target="css= .wirecard-seamless-frame"/>
+  <command name="assertVisible" target="css= .wirecard-seamless-frame "/>
+  <command name="selectFrame" target="css= .wirecard-seamless-frame"/>
+  <command name="assertVisible" target="css= #account_number"/>
+  <command name="assertVisible" target="css= div.col-xs-6:nth-child(1) &gt; div:nth-child(2) &gt; div:nth-child(1)"/>
+  <command name="assertVisible" target="css= #card_security_code"/>
+  <command name="assertVisible" target="css= div.col-xs-6:nth-child(2) &gt; div:nth-child(2)"/>
+  <command name="type" target="id=account_number" value="@{account}"/>
+  <command name="select" target="css= #expiration_month_list" value="@{expDate}"/>
+  <command name="type" target="css= #card_security_code" value="@{securityCode}"/>
+  <command name="select" target="css= #expiration_year_list" value="@{expYear}"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="assertVisible" target="css= .checkout-top [name=dwfrm_billing_save]"/>
+</scriptmodule>

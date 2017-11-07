@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This module is For solving the Write Problem in the Browser. In German Language "ß" could be written as "ss", which is in Chrome "ss" and in Firefox "ß" .</description>
+  <parameter name="Text"/>
+  <parameter name="Pattern"/>
+  <parameter name="Text_2"/>
+  <parameter name="Target"/>
+  <command name="waitForVisible" target="@{Target}"/>
+  <command name="assertText" target="@{Target}" value="@{Text} @{Pattern}"/>
+</scriptmodule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Module opens the small basket wich is simulkating clicking on the baskets icon. </description>
+  <command name="waitForElementPresent" target="css= [class=&quot;context-nav__list-item__counter context-nav__list-item__counter--show js-cart-counter js-cart-counter-ref&quot;]"/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_waitForDOMState"/>
+  <module name="com.HugoBoss.Modules.Helpers.MHelper_scrollElementIntoView">
+    <parameter name="cssLocator" value=" .js--current-cart "/>
+  </module>
+  <command name="waitForVisible" target="css= .js--current-cart "/>
+  <command name="mouseMove" target="css= li.context-nav__list-item:nth-child(6)"/>
+  <command name="click" target="css=.js--current-cart"/>
+</scriptmodule>

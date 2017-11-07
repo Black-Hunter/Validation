@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javamodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" class="helper.HScrollToCoordinate">
+  <description>Scrolls to the  object with the specified name and forces the specified occurrence into view</description>
+  <parameter name="name" desc="The name of the object you want to scroll to"/>
+  <parameter name="occurrence" desc="The ith occurence of the object (starts at 0)."/>
+</javamodule>

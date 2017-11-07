@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testreport>
+  <agents>
+    <agent>
+      <totalCpuUsage>99.619</totalCpuUsage>
+      <cpuUsage>1.932</cpuUsage>
+      <fullGcCount>1</fullGcCount>
+      <fullGcCpuUsage>0.000</fullGcCpuUsage>
+      <fullGcTime>133</fullGcTime>
+      <minorGcCount>5</minorGcCount>
+      <minorGcCpuUsage>0.013</minorGcCpuUsage>
+      <minorGcTime>357</minorGcTime>
+      <name>Agent-ac001_00-localhost-8500</name>
+    </agent>
+  </agents>
+  <configuration>
+    <properties>
+      <property name="com.xceptance.xlt.http.keepAlive" value="true"/>
+      <property name="file.encoding.pkg" value="sun.io"/>
+      <property name="com.xceptance.xlt.customSamplers.1.property.generatedValueUpperLimit" value="60"/>
+      <property name="com.xceptance.xlt.thinktime.transaction.deviation" value="0"/>
+      <property name="com.xceptance.xlt.loadtests.TCheckOut.class" value="com.HugoBoss.Senarios.TCheckOut"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.1.namePattern" value="[^.]+"/>
+      <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre"/>
+      <property name="com.xceptance.xlt.loadtests.TCheckOutFullyValidated.class" value="com.HugoBoss.Senarios.TCheckOutFullyValidated"/>
+      <property name="com.xceptance.xlt.timeout" value="30000"/>
+      <property name="sun.font.fontmanager" value="sun.awt.X11FontManager"/>
+      <property name="java.awt.headless" value="true"/>
+      <property name="com.xceptance.xlt.css.cache.size" value="100"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.5.newName" value="{n:0} CSS"/>
+      <property name="com.xceptance.xlt.loadtests.default.warmUpPeriod" value="30s"/>
+      <property name="xlt.webDriver.window.height" value="1000"/>
+      <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/endorsed"/>
+      <property name="sun.os.patch.level" value="unknown"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.1.stopOnMatch" value="false"/>
+      <property name="java.vendor.url" value="http://java.oracle.com/"/>
+      <property name="com.xceptance.xlt.visualassertion.fuzzy.blocksize.xy" value="10"/>
+      <property name="java.version" value="1.8.0_131"/>
+      <property name="com.xceptance.xlt.proxy" value="false"/>
+      <property name="com.xceptance.xlt.visualassertion.algorithm" value="FUZZY"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.0.urlPattern" value=""/>
+      <property name="com.xceptance.xlt.http.requestId.length" value="15"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.5.urlPattern" value="\.css$"/>
+      <property name="com.xceptance.xlt.javaScriptEnabled" value="true"/>
+      <property name="com.xceptance.xlt.output2disk.size" value="3"/>
+      <property name="com.xceptance.xlt.http.requestId.headerName" value="X-XLT-RequestId"/>
+      <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+      <property name="com.xceptance.xlt.output2disk.onError.dumpMode" value="finalPagesOnly"/>
+      <property name="user.name" value="jihad"/>
+      <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+      <property name="sun.jnu.encoding" value="UTF-8"/>
+      <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.10.contentTypePattern" value=""/>
+      <property name="com.xceptance.xlt.visualassertion.enabled" value="true"/>
+      <property name="com.xceptance.xlt.visualassertion.mask.close" value="false"/>
+      <property name="com.xceptance.xlt.visualassertion.waitingTime" value="1000"/>
+      <property name="com.xceptance.xlt.ssl.easyMode" value="true"/>
+      <property name="com.xceptance.xlt.staticContentCache" value="true"/>
+      <property name="java.specification.name" value="Java Platform API Specification"/>
+      <property name="user.timezone" value="Europe/Berlin"/>
+      <property name="path.separator" value=":"/>
+      <property name="xlt.webDriver.reuseDriver" value="false"/>
+      <property name="file.encoding" value="UTF-8"/>
+      <property name="sun.java.command" value="com.xceptance.xlt.mastercontroller.Main"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.5.namePattern" value="[^.]+"/>
+      <property name="com.xceptance.xlt.propertiesInclude.1" value="visualassertion.properties"/>
+      <property name="com.xceptance.xlt.css.download.images" value="onDemand"/>
+      <property name="com.xceptance.xlt.visualassertion.mask.close.width" value="10"/>
+      <property name="com.xceptance.xlt.cssEnabled" value="true"/>
+      <property name="com.xceptance.xlt.stopTestOnHttpErrors.page" value="true"/>
+      <property name="com.xceptance.xlt.loadtests.default.loadFactor" value="5.0"/>
+      <property name="java.io.tmpdir" value="/tmp"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.10.namePattern" value=".*"/>
+      <property name="user.language" value="en"/>
+      <property name="line.separator" value=""/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.3.urlPattern" value="\.(gif|png|jpg|ico)$"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.5.contentTypePattern" value=""/>
+      <property name="com.xceptance.xlt.loadStaticContent" value="true"/>
+      <property name="com.xceptance.xlt.customSamplers.1.name" value="DemoValueSampler"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.5.stopOnMatch" value="false"/>
+      <property name="com.xceptance.xlt.visualassertion.mark.blocksize.y" value="10"/>
+      <property name="com.xceptance.xlt.staticContent.downloadThreads" value="4"/>
+      <property name="java.vm.info" value="mixed mode"/>
+      <property name="com.xceptance.xlt.visualassertion.mark.blocksize.x" value="10"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.0.contentTypePattern" value=""/>
+      <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.3.newName" value="{n:0} Images"/>
+      <property name="com.xceptance.xlt.visualassertion.mask.close.height" value="10"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.10.stopOnMatch" value="false"/>
+      <property name="com.xceptance.xlt.loadtests.default.shutdownPeriod" value="30s"/>
+      <property name="com.xceptance.xlt.thinktime.action.deviation" value="50"/>
+      <property name="com.xceptance.xlt.staticContentCache.size" value="1000"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.0.statusCodePattern" value=""/>
+      <property name="xlt.webDriver" value="chrome"/>
+      <property name="com.xceptance.xlt.thinktime.transaction" value="0"/>
+      <property name="xlt.reporting.interval" value="5"/>
+      <property name="com.xceptance.xlt.customSamplers.1.chart.title" value="Demo Value Sampler"/>
+      <property name="com.xceptance.xlt.visualassertion.resultDirectory" value="results/visualassertion/FUZZY"/>
+      <property name="com.xceptance.xlt.customSamplers.1.class" value="posters.loadtest.samplers.ValueSamplerDemo"/>
+      <property name="com.xceptance.xlt.browser" value="FF"/>
+      <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.0.newName" value="{n:1}"/>
+      <property name="com.xceptance.xlt.data.directory" value="./config/data"/>
+      <property name="com.xceptance.xlt.visualassertion.tolerance.colors" value="0.1"/>
+      <property name="com.xceptance.xlt.loadtests.default.initialDelay" value="0"/>
+      <property name="com.xceptance.xlt.js.cache.size" value="100"/>
+      <property name="com.xceptance.xlt.output2disk" value="onError"/>
+      <property name="com.xceptance.xlt.customSamplers.1.chart.yAxisTitle" value="Value"/>
+      <property name="os.name" value="Linux"/>
+      <property name="java.specification.vendor" value="Oracle Corporation"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.10.newName" value="{n:0} [{s:0}]"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.1.urlPattern" value="\.js$"/>
+      <property name="com.xceptance.xlt.loadtest.elapsed" value="667579"/>
+      <property name="com.xceptance.xlt.loadtests.default.rampUpPeriod" value="30s"/>
+      <property name="com.xceptance.xlt.result-dir" value="./results"/>
+      <property name="com.xceptance.xlt.http.keepAlive.staleConnectionCheck" value="true"/>
+      <property name="com.xceptance.xlt.stopTestOnHttpErrors.embedded" value="false"/>
+      <property name="com.xceptance.xlt.loadtests" value="TCheckoutWithCustemAdress"/>
+      <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.5.statusCodePattern" value=""/>
+      <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+      <property name="com.xceptance.xlt.stopTestOnJavaScriptErrors" value="false"/>
+      <property name="java.class.version" value="52.0"/>
+      <property name="com.xceptance.xlt.proxy.port" value="8888"/>
+      <property name="com.xceptance.xlt.visualassertion.tolerance.pixels" value="0.1"/>
+      <property name="com.xceptance.xlt.loadtest.start" value="1503164981827"/>
+      <property name="log4j.configuration" value="file:/home/jihad/Desktop/xlt-4.9.3/config/mastercontroller.properties"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.3.namePattern" value="[^.]+"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.10.urlPattern" value=""/>
+      <property name="com.xceptance.xlt.customSamplers.1.description" value="This is a value sampler demo."/>
+      <property name="com.xceptance.xlt.useHighPrecisionTimer" value="true"/>
+      <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/amd64"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.1.contentTypePattern" value=""/>
+      <property name="com.xceptance.xlt.visualassertion.onFailure.createDifferenceImage" value="true"/>
+      <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+      <property name="com.xceptance.xlt.loadtests.comment.commandLine" value="&quot;Check Out With Custom Adress&quot;"/>
+      <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+      <property name="com.xceptance.xlt.loadtests.default.users" value="1"/>
+      <property name="xlt.webDriver.chrome.pathToDriverServer" value="/home/jihad/Desktop/chromedriver_linux64/chromedriver"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.3.statusCodePattern" value=""/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.3.stopOnMatch" value="false"/>
+      <property name="com.xceptance.xlt.visualassertion.ID" value="FUZZY"/>
+      <property name="com.xceptance.xlt.loadtests.TCheckOutVisualAssertion.class" value="com.HugoBoss.Senarios.TCheckOutVisualAssertion"/>
+      <property name="java.vm.specification.version" value="1.8"/>
+      <property name="com.xceptance.xlt.http.filter.exclude" value=""/>
+      <property name="java.security.egd" value="file:/dev/./urandom"/>
+      <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+      <property name="com.xceptance.xlt.maxErrors" value="1000"/>
+      <property name="com.xceptance.xlt.abortLongRunningTransactions" value="false"/>
+      <property name="sun.cpu.isalist" value=""/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.0.namePattern" value="^([^\.]*)(\.[0-9]+)+$"/>
+      <property name="xlt.webDriver.window.width" value="1200"/>
+      <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+      <property name="os.version" value="4.11.11-300.fc26.x86_64"/>
+      <property name="user.home" value="/home/jihad"/>
+      <property name="com.xceptance.xlt.js.debugger.enabled" value="false"/>
+      <property name="java.vm.vendor" value="Oracle Corporation"/>
+      <property name="com.xceptance.xlt.api.validators.XHTMLValidator.enabled" value="false"/>
+      <property name="com.xceptance.xlt.customSamplers.1.interval" value="3000"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.10.statusCodePattern" value="[0-9]+"/>
+      <property name="user.dir" value="/home/jihad/Desktop/xlt-4.9.3/bin"/>
+      <property name="com.xceptance.xlt.home" value="/home/jihad/Desktop/xlt-4.9.3"/>
+      <property name="com.xceptance.xlt.proxy.host" value="127.0.0.1"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.1.newName" value="{n:0} JS"/>
+      <property name="com.xceptance.xlt.loadtests.TCheckoutWithCustemAdress.class" value="com.HugoBoss.Senarios.TCheckoutWithCustemAdress"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.1.statusCodePattern" value=""/>
+      <property name="xlt.reporting.graphite.port" value="2003"/>
+      <property name="sun.cpu.endian" value="little"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.0.stopOnMatch" value="false"/>
+      <property name="java.vm.version" value="25.131-b12"/>
+      <property name="xlt.webDriver.firefox.pathToDriverServer" value="/home/lzoulkowski/XLT_Jihad_Workstation/geckodriver"/>
+      <property name="java.class.path" value="/home/jihad/Desktop/xlt-4.9.3/target/classes:/home/jihad/Desktop/xlt-4.9.3/lib/xpp3_min-1.1.4c.jar:/home/jihad/Desktop/xlt-4.9.3/lib/websocket-api-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/aws-java-sdk-core-1.11.123.jar:/home/jihad/Desktop/xlt-4.9.3/lib/neko-htmlunit-2.25.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-java-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/grizzly-http-server-2.3.25.jar:/home/jihad/Desktop/xlt-4.9.3/lib/asm-tree-5.2.jar:/home/jihad/Desktop/xlt-4.9.3/lib/tyrus-core-1.13.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/xmlpull-1.1.3.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/asm-analysis-5.0.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jna-4.1.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-safari-driver-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jetty-http-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/tyrus-server-1.13.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/cssparser-0.9.22.jar:/home/jihad/Desktop/xlt-4.9.3/lib/pegdown-1.6.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/asm-5.0.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/tyrus-spi-1.13.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/guava-21.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/htmlunit-core-js-2.26.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-lang3-3.5.jar:/home/jihad/Desktop/xlt-4.9.3/lib/freemarker-2.3.26-incubating.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jackson-annotations-2.6.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/websocket-common-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/tyrus-container-grizzly-client-1.13.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-remote-driver-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/httpclient-4.5.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-support-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/httpmime-4.5.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jackson-dataformat-cbor-2.6.6.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-edge-driver-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-chrome-driver-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jetty-servlet-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-cli-1.4.jar:/home/jihad/Desktop/xlt-4.9.3/lib/phantomjsdriver-1.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/websocket-client-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/aws-java-sdk-ec2-1.11.123.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jetty-server-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-firefox-driver-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/httpcore-4.4.6.jar:/home/jihad/Desktop/xlt-4.9.3/lib/serializer-2.7.2.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jfreechart-1.0.19.jar:/home/jihad/Desktop/xlt-4.9.3/lib/xalan-2.7.2.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-exec-1.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jetty-client-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/grizzly-http-2.3.25.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-math3-3.6.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/xstream-1.4.9.jar:/home/jihad/Desktop/xlt-4.9.3/lib/xlt-4.9.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/parboiled-core-1.1.7.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jetty-security-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-io-2.5.jar:/home/jihad/Desktop/xlt-4.9.3/lib/junit-4.12.jar:/home/jihad/Desktop/xlt-4.9.3/lib/parboiled-java-1.1.7.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-logging-1.2.jar:/home/jihad/Desktop/xlt-4.9.3/lib/slf4j-log4j12-1.7.25.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jna-platform-4.1.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/gson-2.8.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jackson-core-2.6.6.jar:/home/jihad/Desktop/xlt-4.9.3/lib/javax.websocket-api-1.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/htmlunit-driver-2.26.jar:/home/jihad/Desktop/xlt-4.9.3/lib/json-20160810.jar:/home/jihad/Desktop/xlt-4.9.3/lib/slf4j-api-1.7.25.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-ie-driver-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/log4j-1.2.17.jar:/home/jihad/Desktop/xlt-4.9.3/lib/javax.servlet-api-3.1.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/xml-apis-1.4.01.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-api-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jaxen-1.1.6.jar:/home/jihad/Desktop/xlt-4.9.3/lib/tyrus-container-grizzly-server-1.13.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jackson-databind-2.6.6.jar:/home/jihad/Desktop/xlt-4.9.3/lib/hessian-4.0.38.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jcommon-1.0.23.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jetty-util-9.4.3.v20170317.jar:/home/jihad/Desktop/xlt-4.9.3/lib/sac-1.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-vfs2-2.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/hamcrest-core-1.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/ion-java-1.0.2.jar:/home/jihad/Desktop/xlt-4.9.3/lib/grizzly-framework-2.3.25.jar:/home/jihad/Desktop/xlt-4.9.3/lib/xercesImpl-2.11.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/asm-util-5.0.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/trove4j-3.0.3.jar:/home/jihad/Desktop/xlt-4.9.3/lib/joda-time-2.8.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jmespath-java-1.11.123.jar:/home/jihad/Desktop/xlt-4.9.3/lib/tyrus-client-1.13.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/selenium-opera-driver-3.4.0.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-configuration2-2.1.1.jar:/home/jihad/Desktop/xlt-4.9.3/lib/commons-codec-1.9.jar:/home/jihad/Desktop/xlt-4.9.3/lib/jetty-io-9.4.3.v20170317.jar"/>
+      <property name="com.xceptance.xlt.customSamplers.1.property.generatedValueLowerLimit" value="50"/>
+      <property name="com.xceptance.xlt.maximumTransactionRunTime" value="900000"/>
+      <property name="os.arch" value="amd64"/>
+      <property name="com.xceptance.xlt.http.gzip" value="true"/>
+      <property name="xlt.reporting.metricNamePrefix" value="xlt.Posters."/>
+      <property name="com.xceptance.xlt.visualassertion.mark.type" value="marker"/>
+      <property name="sun.java.launcher" value="SUN_STANDARD"/>
+      <property name="-" value="&quot;firefox&quot; ................... FirefoxDriver"/>
+      <property name="com.xceptance.xlt.loadtests.default.rampUpInitialValue" value="1"/>
+      <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+      <property name="file.separator" value="/"/>
+      <property name="com.xceptance.xlt.testPropertiesFile" value="test.properties"/>
+      <property name="java.runtime.version" value="1.8.0_131-b12"/>
+      <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-7.b12.fc26.x86_64/jre/classes"/>
+      <property name="com.xceptance.xlt.http.requestId.enabled" value="false"/>
+      <property name="user.country" value="US"/>
+      <property name="com.xceptance.xlt.thinktime.action" value="100"/>
+      <property name="com.xceptance.xlt.loadtests.default.measurementPeriod" value="10m"/>
+      <property name="java.vendor" value="Oracle Corporation"/>
+      <property name="xlt.reporting.graphite.host" value="localhost"/>
+      <property name="com.xceptance.xlt.reportgenerator.requestMergeRules.3.contentTypePattern" value=""/>
+      <property name="java.specification.version" value="1.8"/>
+      <property name="sun.arch.data.model" value="64"/>
+      <property name="com.xceptance.xlt.http.filter.include" value=""/>
+      <property name="com.xceptance.xlt.visualassertion.trainingsMode" value="false"/>
+    </properties>
+    <version>
+      <buildDate>2017-08-17 00:00:00.0 CEST</buildDate>
+      <productName>Xceptance LoadTest</productName>
+      <logogram>XLT</logogram>
+      <productURL>http://www.xceptance-loadtest.com/</productURL>
+      <revisionNumber>320765fab9</revisionNumber>
+      <vendorName>Xceptance Software Technologies GmbH</vendorName>
+      <version>4.9.3</version>
+    </version>
+    <customJvmArgs>
+      <string>-Xms512m</string>
+      <string>-Xmx1g</string>
+      <string>-XX:+UseConcMarkSweepGC</string>
+      <string>-XX:CMSInitiatingOccupancyFraction=70</string>
+    </customJvmArgs>
+    <loadProfile>
+      <testCase>
+        <initialDelay>0</initialDelay>
+        <loadFactor>
+          <int-array>
+            <int>0</int>
+            <int>500</int>
+          </int-array>
+        </loadFactor>
+        <measurementPeriod>600</measurementPeriod>
+        <numberOfIterations>0</numberOfIterations>
+        <numberOfUsers>1...5</numberOfUsers>
+        <rampUpPeriod>30</rampUpPeriod>
+        <shutdownPeriod>30</shutdownPeriod>
+        <testCaseClassName>com.HugoBoss.Senarios.TCheckoutWithCustemAdress</testCaseClassName>
+        <userName>TCheckoutWithCustemAdress</userName>
+        <warmUpPeriod>30</warmUpPeriod>
+        <actionThinkTime>100</actionThinkTime>
+        <actionThinkTimeDeviation>50</actionThinkTimeDeviation>
+      </testCase>
+    </loadProfile>
+    <comments>
+      <string>&quot;Check Out With Custom Adress&quot;</string>
+    </comments>
+  </configuration>
+  <responseCodes/>
+  <hosts/>
+  <summary>
+    <transactions>
+      <name>All Transactions</name>
+      <count>10</count>
+      <countPerSecond>0.017</countPerSecond>
+      <countPerMinute>1.017</countPerMinute>
+      <countPerHour>61.017</countPerHour>
+      <countPerDay>1464.407</countPerDay>
+      <errors>10</errors>
+      <min>183034</min>
+      <max>192366</max>
+      <median>190285.000</median>
+      <mean>189471.000</mean>
+      <deviation>2572.904</deviation>
+      <percentiles>
+        <p50>190285.000</p50>
+        <p95>192360.000</p95>
+        <p99>192360.000</p99>
+        <p99.9>192360.000</p99.9>
+      </percentiles>
+      <events>0</events>
+    </transactions>
+    <actions>
+      <name>All Actions</name>
+      <count>12</count>
+      <countPerSecond>0.020</countPerSecond>
+      <countPerMinute>1.220</countPerMinute>
+      <countPerHour>73.220</countPerHour>
+      <countPerDay>1757.288</countPerDay>
+      <errors>12</errors>
+      <min>172887</min>
+      <max>181669</max>
+      <median>179280.000</median>
+      <mean>178766.583</mean>
+      <deviation>2448.839</deviation>
+      <percentiles>
+        <p50>179280.000</p50>
+        <p95>181660.000</p95>
+        <p99>181660.000</p99>
+        <p99.9>181660.000</p99.9>
+      </percentiles>
+    </actions>
+    <requests>
+      <name>All Requests</name>
+      <count>0</count>
+      <countPerSecond>0.000</countPerSecond>
+      <countPerMinute>0.000</countPerMinute>
+      <countPerHour>0.000</countPerHour>
+      <countPerDay>0.000</countPerDay>
+      <errors>0</errors>
+      <min>0</min>
+      <max>0</max>
+      <median>0.000</median>
+      <mean>0.000</mean>
+      <deviation>0.000</deviation>
+      <percentiles>
+        <p50>0.000</p50>
+        <p95>0.000</p95>
+        <p99>0.000</p99>
+        <p99.9>0.000</p99.9>
+      </percentiles>
+      <bytesSent>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+        <totalCount>0</totalCount>
+        <countPerSecond>0.000</countPerSecond>
+        <countPerMinute>0.000</countPerMinute>
+        <countPerHour>0.000</countPerHour>
+        <countPerDay>0.000</countPerDay>
+      </bytesSent>
+      <bytesReceived>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+        <totalCount>0</totalCount>
+        <countPerSecond>0.000</countPerSecond>
+        <countPerMinute>0.000</countPerMinute>
+        <countPerHour>0.000</countPerHour>
+        <countPerDay>0.000</countPerDay>
+      </bytesReceived>
+      <dnsTime>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+      </dnsTime>
+      <connectTime>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+      </connectTime>
+      <sendTime>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+      </sendTime>
+      <serverBusyTime>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+      </serverBusyTime>
+      <receiveTime>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+      </receiveTime>
+      <timeToFirstBytes>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+      </timeToFirstBytes>
+      <timeToLastBytes>
+        <min>0</min>
+        <max>0</max>
+        <mean>0.000</mean>
+        <deviation>0.000</deviation>
+      </timeToLastBytes>
+      <countPerInterval>
+        <int>0</int>
+        <int>0</int>
+        <int>0</int>
+        <int>0</int>
+      </countPerInterval>
+      <urls>
+        <total>0</total>
+        <list/>
+      </urls>
+    </requests>
+    <customTimers>
+      <name>All Custom Timers</name>
+      <count>0</count>
+      <countPerSecond>0.000</countPerSecond>
+      <countPerMinute>0.000</countPerMinute>
+      <countPerHour>0.000</countPerHour>
+      <countPerDay>0.000</countPerDay>
+      <errors>0</errors>
+      <min>0</min>
+      <max>0</max>
+      <median>0.000</median>
+      <mean>0.000</mean>
+      <deviation>0.000</deviation>
+      <percentiles>
+        <p50>0.000</p50>
+        <p95>0.000</p95>
+        <p99>0.000</p99>
+        <p99.9>0.000</p99.9>
+      </percentiles>
+    </customTimers>
+  </summary>
+  <customValues/>
+  <contentTypes/>
+  <testReportConfig>
+    <runtimePercentiles>
+      <string>50</string>
+      <string>95</string>
+      <string>99</string>
+      <string>99.9</string>
+    </runtimePercentiles>
+    <runtimeIntervals>
+      <interval from="0" to="1000"/>
+      <interval from="1000" to="3000"/>
+      <interval from="3000" to="5000"/>
+      <interval from="5000" to=""/>
+    </runtimeIntervals>
+  </testReportConfig>
+  <errors>
+    <error>
+      <count>10</count>
+      <testCaseName>TCheckoutWithCustemAdress</testCaseName>
+      <actionName>OpenStartPage</actionName>
+      <message>Command failed: clickAndWait target=&quot;css= [value=&quot;Zahlungspflichtig bestellen&quot;]&quot; value=&quot;&quot; -&gt; No element found for locator: css= [value=&quot;Zahlungspflichtig bestellen&quot;]</message>
+      <trace>com.xceptance.xlt.engine.scripting.ScriptException: Command failed: clickAndWait target=&quot;css= [value=&quot;Zahlungspflichtig bestellen&quot;]&quot; value=&quot;&quot; -&gt; No element found for locator: css= [value=&quot;Zahlungspflichtig bestellen&quot;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;localhost.localdomain&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.11.11-300.fc26.x86_64&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: unknown
+	at com.HugoBoss.Modules.Navigation.AConfirm.clickAndWait(AConfirm.xml:5)
+	at com.HugoBoss.Senarios.TCheckoutWithCustemAdress.AConfirm(TCheckoutWithCustemAdress.xml:131)
+</trace>
+      <detailChartID>854587510</detailChartID>
+      <directoryHints>
+        <string>ac001_00/TCheckoutWithCustemAdress/0/output/1503165193502</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/0/output/1503165384648</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/1/output/1503165164010</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/1/output/1503165354646</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/2/output/1503165200314</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/2/output/1503165388371</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/3/output/1503165177821</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/3/output/1503165360859</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/4/output/1503165151335</string>
+        <string>ac001_00/TCheckoutWithCustemAdress/4/output/1503165341298</string>
+      </directoryHints>
+    </error>
+    <requestErrorOverviewCharts/>
+    <transactionErrorOverviewCharts>
+      <chart>
+        <id>-344526893</id>
+        <title>Command failed: clickAndWait target=&quot;css= [value=&quot;Zahlungspflichtig bestellen&quot;]&quot; value=&quot;&quot; -&gt; No element found for locator: css= [value=&quot;Zahlungspflichtig bestellen&quot;]</title>
+      </chart>
+    </transactionErrorOverviewCharts>
+  </errors>
+  <events/>
+  <customTimers/>
+  <requests/>
+  <actions>
+    <action>
+      <name>OpenStartPage</name>
+      <count>12</count>
+      <countPerSecond>0.020</countPerSecond>
+      <countPerMinute>1.220</countPerMinute>
+      <countPerHour>73.220</countPerHour>
+      <countPerDay>1757.288</countPerDay>
+      <errors>12</errors>
+      <min>172887</min>
+      <max>181669</max>
+      <median>179280.000</median>
+      <mean>178766.583</mean>
+      <deviation>2448.839</deviation>
+      <percentiles>
+        <p50>179280.000</p50>
+        <p95>181660.000</p95>
+        <p99>181660.000</p99>
+        <p99.9>181660.000</p99.9>
+      </percentiles>
+    </action>
+  </actions>
+  <transactions>
+    <transaction>
+      <name>TCheckoutWithCustemAdress</name>
+      <count>10</count>
+      <countPerSecond>0.017</countPerSecond>
+      <countPerMinute>1.017</countPerMinute>
+      <countPerHour>61.017</countPerHour>
+      <countPerDay>1464.407</countPerDay>
+      <errors>10</errors>
+      <min>183034</min>
+      <max>192366</max>
+      <median>190285.000</median>
+      <mean>189471.000</mean>
+      <deviation>2572.904</deviation>
+      <percentiles>
+        <p50>190285.000</p50>
+        <p95>192360.000</p95>
+        <p99>192360.000</p99>
+        <p99.9>192360.000</p99.9>
+      </percentiles>
+      <events>0</events>
+    </transaction>
+  </transactions>
+  <general>
+    <bytesSent>0</bytesSent>
+    <bytesReceived>0</bytesReceived>
+    <hits>0</hits>
+    <startTime>2017-08-19 19:50:12.42 CEST</startTime>
+    <endTime>2017-08-19 20:00:02.180 CEST</endTime>
+    <duration>590</duration>
+  </general>
+</testreport>
